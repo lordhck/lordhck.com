@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<title>Analytics: a small privacy focused web tool</title>
+<link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+<link rel="stylesheet" href="/static/site.css">
+<link rel="stylesheet" href="/static/highlight.css">
+<script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+
+<meta name="description" content="A lightweight, privacy-focused analytics tool, no cookies, no tracking.">
+<link rel="canonical" href="https://lordhck.com/post/website-analytics.html">
+<meta property="og:title" content="Analytics: a small privacy focused web tool">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lordhck.com/post/website-analytics.html">
+<meta property="og:description" content="A lightweight, privacy-focused analytics tool, no cookies, no tracking.">
+<meta property="og:site_name" content="Lordhck">
+
+</head>
+<body>
+<nav>
+<p></p>
+<p class="g"><a href="/">λ</a>
+<span class="r">
+<a href="mailto:hey@lordhck.com">hey@lordhck.com</a>
+(<a href="/feed.xml">RSS</a>)
+</span>
+</p>
+</nav>
+
+<article>
+<br>
+  <p><em>Tue, 16 Jun 2026, 01:09</em></p>
+  <h1>Analytics: a small privacy focused web tool</h1>
+<p>Sometimes I wonder if anyone actually reads the posts I write here.</p>
+<p>Either way, here's a small project I've been working on.</p>
+<p>I'm building a self-hosted, privacy-focused website analytics tool. No cookies, no fingerprinting, no tracking users across the web. Just simple analytics for people who want insights without collecting unnecessary data.</p>
+<h2>Why?</h2>
+<p>I don't trust Google with all my data.</p>
+<p>I enjoy building things.</p>
+<p>My data should stay my data.</p>
+<p>The goal is to keep things simple:</p>
+<ol>
+<li>Self-hosted</li>
+<li>SQLite</li>
+<li>Docker Compose</li>
+<li>Minimal setup</li>
+<li>Privacy first</li>
+</ol>
+<p><img alt="First screenshot of login page" src="/static/imgs/analytics-login.webp" />
+<em>The first screenshot of analytics</em></p>
+<p>This will also be my first larger project written in Golang. I've used Go before, but never for something like this. It should be a fun challenge.</p>
+<p><strong>Version 0.1</strong> is currently in development. Once it's ready, I'll write a longer post covering the architecture and design decisions.</p>
+<p>Until then, happy coding.</p>
+</article>
+
+<footer>
+<p class="center">© 2026, Lord J. Hackwell, Version <a href="https://github.com/lordhck/lordhck.com/commit/a820f45b7fab0b07e3a44523e23be68ffd99b68c">a820f45</a></p>
+<p class="center"><button id="theme-toggle" aria-label="Toggle dark mode"><svg id="icon-off" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"/></svg><svg id="icon-on" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" style="display:none"><path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/></svg> dark mode</button></p>
+</footer>
+<script src="/static/site.js"></script>
+</body>
+</html>
