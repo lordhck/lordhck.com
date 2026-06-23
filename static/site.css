@@ -1,6 +1,12 @@
 .g,body{display:flex}nav,p{display:block;unicode-bidi:isolate}*{box-sizing:border-box}:root{--width:calc((60 * 16px / 2) + 2rem);--color_code:#f6f8fa}body,html{width:100%;height:100%;margin:0;font:16px Times New Roman,serif}body{flex-direction:column;line-height:1.5;overflow-y:scroll}article>:not(pre):not(figure),footer,nav{max-width:var(--width);width:100%;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}.d{font-family:monospace;font-size:80%}.center{text-align:center}h1,h2,h3,p{text-wrap:balance;margin:16px 0}h1{font-size:3rem}p{margin-block-start:1em;margin-block-end:1em;margin-inline-start:0;margin-inline-end:0}.g>:nth-child(2){margin-left:auto}.r{text-align:right}a,a:visited{text-decoration:none;color:#00e}a:hover{text-decoration:underline}
-@media (prefers-color-scheme:dark){html:not([data-theme=light]){--color_code:#1e1e1e}html:not([data-theme=light]) body{background:#0a0a0a;color:#f0f0f0}html:not([data-theme=light]) a,html:not([data-theme=light]) a:visited{color:#32cd32}}
-html[data-theme=dark]{--color_code:#1e1e1e}html[data-theme=dark] body{background:#0a0a0a;color:#f0f0f0}html[data-theme=dark] a,html[data-theme=dark] a:visited{color:#32cd32}
+@media (prefers-color-scheme:dark){html:not([data-theme=light]){--color_code:#1e1e1e}html:not([data-theme=light]) body{background:#212529;color:#f0f0f0}html:not([data-theme=light]) a,html:not([data-theme=light]) a:visited{color:#6ea8fe}html:not([data-theme=light]) code{color:#e685b5}}
+html[data-theme=dark]{--color_code:#1e1e1e}html[data-theme=dark] body{background:#212529;color:#f0f0f0}html[data-theme=dark] a,html[data-theme=dark] a:visited{color:#6ea8fe}html[data-theme=dark] code{color:#e685b5}
 li.g>:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}img{max-width:100%;height:auto}article>ul,article>ol{list-style-position:inside}
 @media(max-width:600px){li.g>:nth-child(2){display:none}}
 #theme-toggle{background:none;border:none;cursor:pointer;color:inherit;font-size:.75rem;font-family:Courier,monospace;padding:0;display:inline-flex;align-items:center;gap:.3rem}#theme-toggle svg{vertical-align:middle}
+
+code {
+font-size: .875em;
+color: #c0457e;
+word-wrap: break-word;
+}
