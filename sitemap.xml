@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lordhck.com/</loc></url>
-  <url><loc>https://lordhck.com/post/website-analytics.html</loc></url>
-  <url><loc>https://lordhck.com/post/build-linux.html</loc></url>
-  <url><loc>https://lordhck.com/post/hello-world.html</loc></url>
+  <url><loc>https://lordhck.com/</loc><lastmod>2026-06-16</lastmod></url>
+  <url><loc>https://lordhck.com/post/website-analytics.html</loc><lastmod>2026-06-16</lastmod></url>
+  <url><loc>https://lordhck.com/post/build-linux.html</loc><lastmod>2026-06-12</lastmod></url>
+  <url><loc>https://lordhck.com/post/hello-world.html</loc><lastmod>2026-06-02</lastmod></url>
   <url><loc>https://lordhck.com/tags/linux</loc></url>
   <url><loc>https://lordhck.com/tags/tech</loc></url>
   <url><loc>https://lordhck.com/tags/web</loc></url>

@@ -8,7 +8,7 @@
         <item>
             <title>Analytics: a small privacy focused web tool</title>
             <link>https://lordhck.com/post/website-analytics.html</link>
-            <description>Analytics: a small privacy focused web tool</description>
+            <description>A lightweight, privacy-focused analytics tool, no cookies, no tracking.</description>
             <pubDate>Tue, 16 Jun 2026 01:09:00 +0000</pubDate>
             <guid>https://lordhck.com/post/website-analytics.html</guid>
         </item>
@@ -16,7 +16,7 @@
         <item>
             <title>Build my own Linux?</title>
             <link>https://lordhck.com/post/build-linux.html</link>
-            <description>Build my own Linux?</description>
+            <description>After years of thinking about it, I'm finally exploring what it takes to build a minimal Linux system from the ground up.</description>
             <pubDate>Fri, 12 Jun 2026 17:23:00 +0000</pubDate>
             <guid>https://lordhck.com/post/build-linux.html</guid>
         </item>
@@ -24,7 +24,7 @@
         <item>
             <title>Hello world</title>
             <link>https://lordhck.com/post/hello-world.html</link>
-            <description>Hello world</description>
+            <description>Building a tiny static site generator in Python.</description>
             <pubDate>Tue, 02 Jun 2026 16:17:00 +0000</pubDate>
             <guid>https://lordhck.com/post/hello-world.html</guid>
         </item>
