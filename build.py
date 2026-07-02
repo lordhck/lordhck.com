@@ -66,6 +66,12 @@ shutil.copytree(STATIC_DIR, DIST / "static", dirs_exist_ok=True)
 if Path("CNAME").exists():
     shutil.copy("CNAME", DIST / "CNAME")
 
+# robots.txt
+(DIST / "robots.txt").write_text(
+    "User-agent: *\n"
+    "Sitemap: https://lordhck.com/sitemap.xml\n"
+)
+
 # Generate syntax highlight CSS (lightbulb for light, one-dark for dark)
 light = HtmlFormatter(style="lightbulb").get_style_defs(".codehilite")
 dark_media = HtmlFormatter(style="one-dark").get_style_defs("html:not([data-theme=light]) .codehilite")

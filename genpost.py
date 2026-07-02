@@ -66,6 +66,8 @@ def build_posts(posts, dist, template, commit_short, commit_full):
             title=post["title"],
             description=post["description"],
             date=post["date_long"],
+            date_iso=post["date_raw"].isoformat() if post["date_raw"] else "",
+            tags=post["tags"],
             content=post["content"],
             url=post["url"],
             commit_short=commit_short,

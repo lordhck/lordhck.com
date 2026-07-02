@@ -8,6 +8,24 @@
 <meta property="og:url" content="https://lordhck.com{{ url }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:site_name" content="Lordhck">
+{% if date_iso %}<meta property="article:published_time" content="{{ date_iso }}">{% endif %}
+<meta property="article:author" content="Lord J. Hackwell">
+{% for t in tags %}<meta property="article:tag" content="{{ t }}">
+{% endfor %}<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | tojson }},
+  "description": {{ description | tojson }},
+  "author": {"@type": "Person", "name": "Lord J. Hackwell"},
+  {% if date_iso %}"datePublished": {{ date_iso | tojson }},{% endif %}
+  "url": "https://lordhck.com{{ url }}",
+  "image": "https://lordhck.com/static/imgs/social-share.webp",
+  "keywords": {{ tags | tojson }}
+}
+</script>
 {% endblock %}
 {% block content %}
 <article>

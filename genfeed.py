@@ -12,7 +12,7 @@ def build_feed(posts):
         <item>
             <title>{escape(post['title'])}</title>
             <link>https://lordhck.com{post['url']}</link>
-            <description>{escape(post['title'])}</description>
+            <description>{escape(post['description'])}</description>
             <pubDate>{post['date_raw'].strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>
             <guid>https://lordhck.com{post['url']}</guid>
         </item>
