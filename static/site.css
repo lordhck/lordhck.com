@@ -25,3 +25,4 @@ color: #000;
 .tag:hover {
 text-decoration: none;
 }
+h1.landing { font-size: 2.5rem; }
