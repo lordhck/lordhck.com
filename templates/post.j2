@@ -26,10 +26,24 @@
   "keywords": {{ tags | tojson }}
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://lordhck.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Posts", "item": "https://lordhck.com/"},
+    {"@type": "ListItem", "position": 3, "name": {{ title | tojson }}, "item": "https://lordhck.com{{ url }}"}
+  ]
+}
+</script>
 {% endblock %}
 {% block content %}
 <article>
 <br>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> &rsaquo; Posts &rsaquo; {{ title }}
+  </nav>
   {% if date %}<p><em>{{ date }}</em></p>{% endif %}
   {{ content | safe }}
 </article>
