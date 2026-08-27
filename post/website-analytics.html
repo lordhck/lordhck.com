@@ -39,6 +39,17 @@
   "keywords": ["tech", "web"]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://lordhck.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Posts", "item": "https://lordhck.com/"},
+    {"@type": "ListItem", "position": 3, "name": "Analytics: a small privacy focused web tool", "item": "https://lordhck.com/post/website-analytics.html"}
+  ]
+}
+</script>
 
 </head>
 <body>
@@ -54,6 +65,9 @@
 
 <article>
 <br>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> &rsaquo; Posts &rsaquo; Analytics: a small privacy focused web tool
+  </nav>
   <p><em>Tue, 16 Jun 2026, 01:09</em></p>
   <h1>Analytics: a small privacy focused web tool</h1>
 <p>Sometimes I wonder if anyone actually reads the posts I write here.</p>
@@ -79,7 +93,7 @@
 </article>
 
 <footer>
-<p class="center">© 2026, Lord J. Hackwell, Version <a href="https://github.com/lordhck/lordhck.com/commit/0e0594184362da2e51863c7df3594ab262cb07d8">0e05941</a></p>
+<p class="center">© 2026, Lord J. Hackwell, Version <a href="https://github.com/lordhck/lordhck.com/commit/aa251b7cd41c6640acb5eef6285801804045b497">aa251b7</a></p>
 <p class="center"><button id="theme-toggle" aria-label="Toggle dark mode"><svg id="icon-off" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"/></svg><svg id="icon-on" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" style="display:none"><path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/></svg> dark mode</button></p>
 </footer>
 <script src="/static/site.js"></script>
