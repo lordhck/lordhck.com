@@ -10,8 +10,7 @@ def build_sitemap(posts, tags):
         lastmod = post["date_raw"].strftime("%Y-%m-%d") if post["date_raw"] else None
         entries.append((f"https://lordhck.com{post['url']}", lastmod))
 
-    for tag in tags:
-        entries.append((f"https://lordhck.com/tags/{tag}", None))
+    # Tag pages under /tags/ are intentionally excluded (noindex).
 
     def render(loc, lastmod):
         if lastmod:

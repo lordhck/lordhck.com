@@ -2,6 +2,7 @@
 {% block title %}#{{ tag }}{% endblock %}
 {% block head %}
 <meta name="description" content="Posts tagged #{{ tag }}">
+<meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://lordhck.com/tags/{{ tag }}">
 {% endblock %}
 {% block content %}
