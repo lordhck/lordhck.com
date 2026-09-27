@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lord J. Hackwell</title>
+    <meta name="description" content="Self-taught dev &amp; hacker. I build things, break things, and occasionally understand why they work.">
+    <link rel="canonical" href="https://lordhck.com/">
+    <link rel="alternate" type="application/rss+xml" title="Lord J. Hackwell" href="/feed.xml">
+
+    <meta property="og:site_name" content="Lord J. Hackwell">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lord J. Hackwell">
+    <meta property="og:description" content="Self-taught dev &amp; hacker. I build things, break things, and occasionally understand why they work.">
+    <meta property="og:url" content="https://lordhck.com/">
+    <meta property="og:image" content="https://lordhck.com/static/imgs/social-share.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://lordhck.com/#website",
+      "name": "Lord J. Hackwell",
+      "url": "https://lordhck.com/",
+      "description": "Self-taught dev & hacker. I build things, break things, and occasionally understand why they work.",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name": "Lord J. Hackwell",
+        "url": "https://lordhck.com/"
+      }
+    }
+    </script>
+
+    <script>
+        // Set theme before paint to avoid a flash
+        (function () {
+            var theme;
+            try { theme = localStorage.getItem("theme"); } catch (e) {}
+            var dark = theme === "dark" ||
+                (theme !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+            document.documentElement.classList.toggle("dark", dark);
+        })();
+    </script>
+    <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo" aria-label="Home">
+            <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
+                <rect class="logo-bg" width="32" height="32" rx="8"/>
+                <path class="logo-mark" d="M9.2 7.8h1.5c1.3 0 2.1.5 2.8 1.7l6.9 12.2c.8 1.4 1.6 2 3 2M15.2 12.8l-5.6 10.9"/>
+            </svg>
+        </a>
+
+        <div class="links">
+            <a href="mailto:hey@lordhck.com">hey@lordhck.com</a>
+            <a href="/feed.xml">RSS</a>
+
+            <label class="toggle">
+                <input type="checkbox" id="dark-mode" aria-label="Dark mode">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+
+    <div>
+        <h1>Lord J. Hackwell</h1>
+        <p>
+            Self-taught dev &amp; hacker. I build things, break things, and
+            occasionally understand why they work. Currently deep in vibe-code mode.
+        </p>
+    </div>
+
+
+    <nav>
+        <ul>
+            <li><strong>Home</strong></li>
+            <li><a href="/posts/">Posts</a></li>
+            <li><a href="/about/">About</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2>Recent Posts</h2>
+
+        <ul class="post-list">
+            <li>
+                <time class="date" datetime="2026-09-28T01:10:22+02:00">28 Sep 2026</time>
+                <a class="post-link" href="/post/hello-world.html">
+                    Hello World
+                </a>
+            </li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026, Lord J. Hackwell. Version:
+            <span id="version">...</span>
+        </p>
+        <p class="theme-switch">
+            <button type="button" id="theme-cycle" title="Switch theme">theme: <span class="theme-value">system</span></button>
+        </p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · Lord J. Hackwell</title>
+    <meta name="description" content="About Lord J. Hackwell: self-taught dev &amp; hacker.">
+    <link rel="canonical" href="https://lordhck.com/about/">
+    <link rel="alternate" type="application/rss+xml" title="Lord J. Hackwell" href="/feed.xml">
+
+    <meta property="og:site_name" content="Lord J. Hackwell">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About">
+    <meta property="og:description" content="About Lord J. Hackwell: self-taught dev &amp; hacker.">
+    <meta property="og:url" content="https://lordhck.com/about/">
+    <meta property="og:image" content="https://lordhck.com/static/imgs/me-openai.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "About",
+      "url": "https://lordhck.com/about/",
+      "description": "About Lord J. Hackwell: self-taught dev & hacker.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://lordhck.com/#website"
+      }
+    }
+    </script>
+
+    <script>
+        // Set theme before paint to avoid a flash
+        (function () {
+            var theme;
+            try { theme = localStorage.getItem("theme"); } catch (e) {}
+            var dark = theme === "dark" ||
+                (theme !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+            document.documentElement.classList.toggle("dark", dark);
+        })();
+    </script>
+    <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo" aria-label="Home">
+            <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
+                <rect class="logo-bg" width="32" height="32" rx="8"/>
+                <path class="logo-mark" d="M9.2 7.8h1.5c1.3 0 2.1.5 2.8 1.7l6.9 12.2c.8 1.4 1.6 2 3 2M15.2 12.8l-5.6 10.9"/>
+            </svg>
+        </a>
+
+        <div class="links">
+            <a href="mailto:hey@lordhck.com">hey@lordhck.com</a>
+            <a href="/feed.xml">RSS</a>
+
+            <label class="toggle">
+                <input type="checkbox" id="dark-mode" aria-label="Dark mode">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+
+    <section class="about">
+        <figure class="about-figure">
+            <img class="about-photo" src="/static/imgs/me-openai.webp"
+                 alt="Portrait of Lord J. Hackwell" width="180" height="180">
+            <figcaption>How ChatGPT imagines me.</figcaption>
+        </figure>
+
+        <div>
+            <h1>Lord J. Hackwell</h1>
+            <p>
+                I'm a self-taught developer and hacker. My journey into programming
+                started when I was 10, after I picked up a copy of
+                <cite>Webmaster's Handbook</cite> from 1997.
+            </p>
+            <p>
+                That book introduced me to HTML, and I quickly started making my own
+                little websites. A couple of years later, at 12, I moved on to PHP
+                because I wanted to make those websites a little less boring and a
+                lot cooler.
+            </p>
+            <p>
+                I had no idea where it would lead. I just liked making things.
+            </p>
+            <p>
+                Later, I went to John Bauer College, a school with an early focus on
+                IT, entrepreneurship, and practical programs. There I studied web
+                design, programming (Java and PHP), networking, from server racks and
+                Cisco routers to writing RIP routing tables, digital technology and,
+                yes, Linux.
+            </p>
+            <p>
+                After graduating, I switched from Windows to Linux and never looked
+                back.
+            </p>
+            <p>
+                Since then, I've kept learning mostly by building things, breaking
+                things, and figuring out why they broke. I've worked with everything
+                from web development and Python to Linux, networking, servers,
+                containers, and low-level systems.
+            </p>
+            <p>
+                These days, I tend to build the things I wish existed, automate the
+                things I find annoying, and occasionally go down a rabbit hole just
+                because I want to know how something works.
+            </p>
+            <p>
+                I'm currently deep in vibe-code mode, working on a mix of tools,
+                websites, Linux projects, and other weird little ideas that probably
+                didn't need to exist, but they do now.
+            </p>
+            <p>Made in Sweden.</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>
+            &copy; 2026, Lord J. Hackwell. Version:
+            <span id="version">...</span>
+        </p>
+        <p class="theme-switch">
+            <button type="button" id="theme-cycle" title="Switch theme">theme: <span class="theme-value">system</span></button>
+        </p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

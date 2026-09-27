@@ -1,0 +1,1043 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicateType": "https://slsa.dev/provenance/v1",
+  "subject": [
+    {
+      "name": "404.html",
+      "digest": {
+        "sha256": "ef6c2cca80710ec96e704f8c08cb65d4ce6212357beee30002d6a606c501c835"
+      }
+    },
+    {
+      "name": "CNAME",
+      "digest": {
+        "sha256": "1ee3564af98e395c558756138625cc6422693e3b6545a1e4a8291a3f4e0d7dc2"
+      }
+    },
+    {
+      "name": "about/index.html",
+      "digest": {
+        "sha256": "17f18ce65312afc4ee41204ca8efc7de9474f003c1f46f84dca935b4d827d0d4"
+      }
+    },
+    {
+      "name": "feed.xml",
+      "digest": {
+        "sha256": "2bd738f0a73bc6e535bcea0c665d803a21288b4b33b282de76a77d833723c023"
+      }
+    },
+    {
+      "name": "index.html",
+      "digest": {
+        "sha256": "bf28379a26fdbe6828d9588a2c4431be70ae8ca614bf2ccfef9f685d88ff57e1"
+      }
+    },
+    {
+      "name": "post/hello-world.html",
+      "digest": {
+        "sha256": "d79f19f6d747b42783930a64b571ae74927fea524bb56dd2ab5fc6ce176d4bb6"
+      }
+    },
+    {
+      "name": "posts/index.html",
+      "digest": {
+        "sha256": "a6252d1dd820a2732555309b3a4e1b7209dc6ed401c9bfc0e3df0ec32d580d54"
+      }
+    },
+    {
+      "name": "robots.txt",
+      "digest": {
+        "sha256": "fe2e73223995b142be84499df08dec1fa77745595bc41b5deaa2ec8599c79e17"
+      }
+    },
+    {
+      "name": "sitemap.xml",
+      "digest": {
+        "sha256": "2015d989b7cded51ce1200c1f0b02268df1743096a3a270f5df3fa94e819e758"
+      }
+    },
+    {
+      "name": "static/app.js",
+      "digest": {
+        "sha256": "baf6c8b3b7b1a0e1df58ca0d8aabd7cb104ffc86c7e669c0bc756841c08017cf"
+      }
+    },
+    {
+      "name": "static/favicon.svg",
+      "digest": {
+        "sha256": "53ae8270f960088faffc746f46c62b08990a0026741f8ff5047acab40b96518f"
+      }
+    },
+    {
+      "name": "static/imgs/me-openai.webp",
+      "digest": {
+        "sha256": "af94b134d79cb04082a721efa68e084a82c7790ae3fd4fc25d17528f603d24d4"
+      }
+    },
+    {
+      "name": "static/imgs/social-share.webp",
+      "digest": {
+        "sha256": "f8094a92b42e139b51a6b680920ee16586d10f5e1cc485ea301f090d437de4a4"
+      }
+    },
+    {
+      "name": "static/style.css",
+      "digest": {
+        "sha256": "75f8bfa101bdf8551ec422b21caf99218759e9ef6cdf9107990913bde6e25c7a"
+      }
+    }
+  ],
+  "predicate": {
+    "buildDefinition": {
+      "buildType": "https://github.com/moby/buildkit/blob/master/docs/attestations/slsa-definitions.md",
+      "resolvedDependencies": [
+        {
+          "uri": "pkg:docker/ghcr.io/astral-sh/uv@python3.12-bookworm-slim?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "e5b65587bce7de595f299855d7385fe7fca39b8a74baa261ba1b7147afa78e58"
+          }
+        }
+      ],
+      "externalParameters": {
+        "configSource": {
+          "path": "Dockerfile"
+        },
+        "request": {
+          "frontend": "dockerfile.v0",
+          "locals": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "dockerfile"
+            }
+          ],
+          "root": {
+            "configSource": {
+              "path": "Dockerfile"
+            },
+            "request": {
+              "args": {
+                "vcs:localdir:context": ".",
+                "vcs:localdir:dockerfile": ".",
+                "vcs:revision": "e06704b93d870bf5b8ace1cb494a99bca6a5a88a",
+                "vcs:source": "https://github.com/lordhck/lordhck.com"
+              }
+            }
+          },
+          "compatibilityVersion": 30
+        }
+      },
+      "internalParameters": {
+        "buildConfig": {
+          "digestMapping": {
+            "sha256:03a47b850b6b444803a3b66494e1cf3fae479ce80b42df0c1aa2f9a01e14094f": "step10",
+            "sha256:112406bfaf89d3c9bf3a8cd48df7954cce4dc412307c8b72933d260239b46a12": "step3",
+            "sha256:1a9ef0d62638295b0493dc1fe896c5df995e8ad6387680253d05b57d5367a98d": "step8",
+            "sha256:26b01c88bb6ea84a4ebb2244aa052ed0fc7a80df10a39da004364448d201544e": "step9",
+            "sha256:27617bb85266f10943715c0b8dce63a556bc87f317cc0893397f37880447c384": "step7",
+            "sha256:331d8cb769d84118a8c57083905c8a6543d7549e0c6e362ac6fd5be9e0a66eea": "step6",
+            "sha256:35c6986c1f2c8db7a60776a38052ba24213ba09d57cf942672885da085ff45bb": "step5",
+            "sha256:5aa0720fe9d9a4e8325476c8ae19f67fa881338e0f1f619d577d30946ecc8f54": "step2",
+            "sha256:66be4bc85442b631e1d34f340cac92233d7beb99a6332f84e2a3c8b943ec17f7": "step0",
+            "sha256:b0b7db0544cf7040739d61211ba29cee4b8096a75680ff74a6536ca5a84f3cdc": "step4",
+            "sha256:e63874c0255e6ac63cc237ba4e41ff799e78ae2c55b3e006bdce6ec498c03ccf": "step11",
+            "sha256:f62e8adf2db9756e189595ef43dec6bfa1484e7107508a77d52c0dd2ab7b8d7e": "step1"
+          },
+          "llbDefinition": [
+            {
+              "id": "step0",
+              "op": {
+                "Op": {
+                  "source": {
+                    "identifier": "docker-image://ghcr.io/astral-sh/uv:python3.12-bookworm-slim@sha256:e5b65587bce7de595f299855d7385fe7fca39b8a74baa261ba1b7147afa78e58"
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step1",
+              "inputs": [
+                "step0:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "apt-get update     \u0026\u0026 apt-get install -y --no-install-recommends webp     \u0026\u0026 rm -rf /var/lib/apt/lists/*"
+                      ],
+                      "cwd": "/",
+                      "env": [
+                        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "LANG=C.UTF-8",
+                        "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                        "PYTHON_VERSION=3.12.12",
+                        "PYTHON_SHA256=fb85a13414b028c49ba18bbd523c2d055a30b56b18b92ce454ea2c51edc656c4",
+                        "UV_TOOL_BIN_DIR=/usr/local/bin"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step2",
+              "inputs": [
+                "step1:0"
+              ],
+              "op": {
+                "Op": {
+                  "file": {
+                    "actions": [
+                      {
+                        "Action": {
+                          "mkdir": {
+                            "makeParents": true,
+                            "mode": 493,
+                            "path": "/app",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": 0,
+                        "output": 0,
+                        "secondaryInput": -1
+                      }
+                    ]
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step3",
+              "op": {
+                "Op": {
+                  "source": {
+                    "attrs": {
+                      "local.excludepatterns": "[\".git\",\".github\",\".venv\",\"__pycache__\",\"dist\",\"static/style.min.css\",\"static/imgs/*.webp\"]",
+                      "local.sharedkeyhint": "context"
+                    },
+                    "identifier": "local://context"
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step4",
+              "inputs": [
+                "step2:0",
+                "step3:0"
+              ],
+              "op": {
+                "Op": {
+                  "file": {
+                    "actions": [
+                      {
+                        "Action": {
+                          "copy": {
+                            "allowEmptyWildcard": true,
+                            "allowWildcard": true,
+                            "createDestPath": true,
+                            "dest": "/app/",
+                            "dirCopyContents": true,
+                            "followSymlink": true,
+                            "mode": -1,
+                            "src": "/pyproject.toml",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": 0,
+                        "output": -1,
+                        "secondaryInput": 1
+                      },
+                      {
+                        "Action": {
+                          "copy": {
+                            "allowEmptyWildcard": true,
+                            "allowWildcard": true,
+                            "createDestPath": true,
+                            "dest": "/app/",
+                            "dirCopyContents": true,
+                            "followSymlink": true,
+                            "mode": -1,
+                            "src": "/uv.lock",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": 2,
+                        "output": 0,
+                        "secondaryInput": 1
+                      }
+                    ]
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step5",
+              "inputs": [
+                "step4:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "uv sync --frozen"
+                      ],
+                      "cwd": "/app",
+                      "env": [
+                        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "LANG=C.UTF-8",
+                        "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                        "PYTHON_VERSION=3.12.12",
+                        "PYTHON_SHA256=fb85a13414b028c49ba18bbd523c2d055a30b56b18b92ce454ea2c51edc656c4",
+                        "UV_TOOL_BIN_DIR=/usr/local/bin",
+                        "UV_LINK_MODE=copy"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step6",
+              "inputs": [
+                "step5:0",
+                "step3:0"
+              ],
+              "op": {
+                "Op": {
+                  "file": {
+                    "actions": [
+                      {
+                        "Action": {
+                          "copy": {
+                            "allowEmptyWildcard": true,
+                            "allowWildcard": true,
+                            "createDestPath": true,
+                            "dest": "/app/",
+                            "dirCopyContents": true,
+                            "followSymlink": true,
+                            "mode": -1,
+                            "src": "/",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": 0,
+                        "output": 0,
+                        "secondaryInput": 1
+                      }
+                    ]
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step7",
+              "inputs": [
+                "step6:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "scripts/minifycss static/style.css     \u0026\u0026 rm static/style.css     \u0026\u0026 mv static/style.min.css static/style.css"
+                      ],
+                      "cwd": "/app",
+                      "env": [
+                        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "LANG=C.UTF-8",
+                        "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                        "PYTHON_VERSION=3.12.12",
+                        "PYTHON_SHA256=fb85a13414b028c49ba18bbd523c2d055a30b56b18b92ce454ea2c51edc656c4",
+                        "UV_TOOL_BIN_DIR=/usr/local/bin",
+                        "UV_LINK_MODE=copy"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step8",
+              "inputs": [
+                "step7:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "scripts/imgconvert     \u0026\u0026 find static/imgs -type f \\( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \\) -delete"
+                      ],
+                      "cwd": "/app",
+                      "env": [
+                        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "LANG=C.UTF-8",
+                        "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                        "PYTHON_VERSION=3.12.12",
+                        "PYTHON_SHA256=fb85a13414b028c49ba18bbd523c2d055a30b56b18b92ce454ea2c51edc656c4",
+                        "UV_TOOL_BIN_DIR=/usr/local/bin",
+                        "UV_LINK_MODE=copy"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step9",
+              "inputs": [
+                "step8:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "uv run --frozen build.py"
+                      ],
+                      "cwd": "/app",
+                      "env": [
+                        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "LANG=C.UTF-8",
+                        "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                        "PYTHON_VERSION=3.12.12",
+                        "PYTHON_SHA256=fb85a13414b028c49ba18bbd523c2d055a30b56b18b92ce454ea2c51edc656c4",
+                        "UV_TOOL_BIN_DIR=/usr/local/bin",
+                        "UV_LINK_MODE=copy"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step10",
+              "inputs": [
+                "step9:0"
+              ],
+              "op": {
+                "Op": {
+                  "file": {
+                    "actions": [
+                      {
+                        "Action": {
+                          "copy": {
+                            "allowEmptyWildcard": true,
+                            "allowWildcard": true,
+                            "createDestPath": true,
+                            "dest": "/",
+                            "dirCopyContents": true,
+                            "followSymlink": true,
+                            "mode": -1,
+                            "src": "/app/dist",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": -1,
+                        "output": 0,
+                        "secondaryInput": 0
+                      }
+                    ]
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step11",
+              "inputs": [
+                "step10:0"
+              ],
+              "op": {
+                "Op": {}
+              }
+            }
+          ]
+        },
+        "builderPlatform": "linux/amd64",
+        "dockerfileVersion": "1.26.0",
+        "github_actor": "lordhck",
+        "github_actor_id": "54715115",
+        "github_event_name": "push",
+        "github_event_payload": {
+          "after": "e06704b93d870bf5b8ace1cb494a99bca6a5a88a",
+          "base_ref": null,
+          "before": "0000000000000000000000000000000000000000",
+          "commits": [
+            {
+              "author": {
+                "email": "lordhck@niton.dev",
+                "name": "Lord J. Hackwell",
+                "username": "lordhck"
+              },
+              "committer": {
+                "email": "lordhck@niton.dev",
+                "name": "Lord J. Hackwell",
+                "username": "lordhck"
+              },
+              "distinct": true,
+              "id": "e06704b93d870bf5b8ace1cb494a99bca6a5a88a",
+              "message": "initial website setup",
+              "timestamp": "2026-09-28T01:15:47+02:00",
+              "tree_id": "f6af2d2684554e9db7a539c3c1e917a8ecd6cdfe",
+              "url": "https://github.com/lordhck/lordhck.com/commit/e06704b93d870bf5b8ace1cb494a99bca6a5a88a"
+            }
+          ],
+          "compare": "https://github.com/lordhck/lordhck.com/commit/e06704b93d87",
+          "created": true,
+          "deleted": false,
+          "forced": false,
+          "head_commit": {
+            "author": {
+              "email": "lordhck@niton.dev",
+              "name": "Lord J. Hackwell",
+              "username": "lordhck"
+            },
+            "committer": {
+              "email": "lordhck@niton.dev",
+              "name": "Lord J. Hackwell",
+              "username": "lordhck"
+            },
+            "distinct": true,
+            "id": "e06704b93d870bf5b8ace1cb494a99bca6a5a88a",
+            "message": "initial website setup",
+            "timestamp": "2026-09-28T01:15:47+02:00",
+            "tree_id": "f6af2d2684554e9db7a539c3c1e917a8ecd6cdfe",
+            "url": "https://github.com/lordhck/lordhck.com/commit/e06704b93d870bf5b8ace1cb494a99bca6a5a88a"
+          },
+          "pusher": {
+            "email": "lordhck@niton.dev",
+            "name": "lordhck"
+          },
+          "ref": "refs/heads/main",
+          "repository": {
+            "allow_forking": true,
+            "archive_url": "https://api.github.com/repos/lordhck/lordhck.com/{archive_format}{/ref}",
+            "archived": false,
+            "assignees_url": "https://api.github.com/repos/lordhck/lordhck.com/assignees{/user}",
+            "blobs_url": "https://api.github.com/repos/lordhck/lordhck.com/git/blobs{/sha}",
+            "branches_url": "https://api.github.com/repos/lordhck/lordhck.com/branches{/branch}",
+            "clone_url": "https://github.com/lordhck/lordhck.com.git",
+            "collaborators_url": "https://api.github.com/repos/lordhck/lordhck.com/collaborators{/collaborator}",
+            "comments_url": "https://api.github.com/repos/lordhck/lordhck.com/comments{/number}",
+            "commits_url": "https://api.github.com/repos/lordhck/lordhck.com/commits{/sha}",
+            "compare_url": "https://api.github.com/repos/lordhck/lordhck.com/compare/{base}...{head}",
+            "contents_url": "https://api.github.com/repos/lordhck/lordhck.com/contents/{+path}",
+            "contributors_url": "https://api.github.com/repos/lordhck/lordhck.com/contributors",
+            "created_at": 1790550997,
+            "default_branch": "main",
+            "deployments_url": "https://api.github.com/repos/lordhck/lordhck.com/deployments",
+            "description": null,
+            "disabled": false,
+            "downloads_url": "https://api.github.com/repos/lordhck/lordhck.com/downloads",
+            "events_url": "https://api.github.com/repos/lordhck/lordhck.com/events",
+            "fork": false,
+            "forks": 0,
+            "forks_count": 0,
+            "forks_url": "https://api.github.com/repos/lordhck/lordhck.com/forks",
+            "full_name": "lordhck/lordhck.com",
+            "git_commits_url": "https://api.github.com/repos/lordhck/lordhck.com/git/commits{/sha}",
+            "git_refs_url": "https://api.github.com/repos/lordhck/lordhck.com/git/refs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/lordhck/lordhck.com/git/tags{/sha}",
+            "git_url": "git://github.com/lordhck/lordhck.com.git",
+            "has_discussions": false,
+            "has_downloads": true,
+            "has_issues": true,
+            "has_pages": false,
+            "has_projects": true,
+            "has_pull_requests": true,
+            "has_wiki": true,
+            "homepage": null,
+            "hooks_url": "https://api.github.com/repos/lordhck/lordhck.com/hooks",
+            "html_url": "https://github.com/lordhck/lordhck.com",
+            "id": 1391489642,
+            "is_template": false,
+            "issue_comment_url": "https://api.github.com/repos/lordhck/lordhck.com/issues/comments{/number}",
+            "issue_events_url": "https://api.github.com/repos/lordhck/lordhck.com/issues/events{/number}",
+            "issues_url": "https://api.github.com/repos/lordhck/lordhck.com/issues{/number}",
+            "keys_url": "https://api.github.com/repos/lordhck/lordhck.com/keys{/key_id}",
+            "labels_url": "https://api.github.com/repos/lordhck/lordhck.com/labels{/name}",
+            "language": null,
+            "languages_url": "https://api.github.com/repos/lordhck/lordhck.com/languages",
+            "license": null,
+            "master_branch": "main",
+            "merges_url": "https://api.github.com/repos/lordhck/lordhck.com/merges",
+            "milestones_url": "https://api.github.com/repos/lordhck/lordhck.com/milestones{/number}",
+            "mirror_url": null,
+            "name": "lordhck.com",
+            "node_id": "R_kgDOUvByag",
+            "notifications_url": "https://api.github.com/repos/lordhck/lordhck.com/notifications{?since,all,participating}",
+            "open_issues": 0,
+            "open_issues_count": 0,
+            "owner": {
+              "avatar_url": "https://avatars.githubusercontent.com/u/54715115?v=4",
+              "email": "lordhck@niton.dev",
+              "events_url": "https://api.github.com/users/lordhck/events{/privacy}",
+              "followers_url": "https://api.github.com/users/lordhck/followers",
+              "following_url": "https://api.github.com/users/lordhck/following{/other_user}",
+              "gists_url": "https://api.github.com/users/lordhck/gists{/gist_id}",
+              "gravatar_id": "",
+              "html_url": "https://github.com/lordhck",
+              "id": 54715115,
+              "login": "lordhck",
+              "name": "lordhck",
+              "node_id": "MDQ6VXNlcjU0NzE1MTE1",
+              "organizations_url": "https://api.github.com/users/lordhck/orgs",
+              "received_events_url": "https://api.github.com/users/lordhck/received_events",
+              "repos_url": "https://api.github.com/users/lordhck/repos",
+              "site_admin": false,
+              "starred_url": "https://api.github.com/users/lordhck/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/lordhck/subscriptions",
+              "type": "User",
+              "url": "https://api.github.com/users/lordhck",
+              "user_view_type": "public"
+            },
+            "private": false,
+            "pull_request_creation_policy": "all",
+            "pulls_url": "https://api.github.com/repos/lordhck/lordhck.com/pulls{/number}",
+            "pushed_at": 1790551001,
+            "releases_url": "https://api.github.com/repos/lordhck/lordhck.com/releases{/id}",
+            "size": 0,
+            "ssh_url": "git@github.com:lordhck/lordhck.com.git",
+            "stargazers": 0,
+            "stargazers_count": 0,
+            "stargazers_url": "https://api.github.com/repos/lordhck/lordhck.com/stargazers",
+            "statuses_url": "https://api.github.com/repos/lordhck/lordhck.com/statuses/{sha}",
+            "subscribers_url": "https://api.github.com/repos/lordhck/lordhck.com/subscribers",
+            "subscription_url": "https://api.github.com/repos/lordhck/lordhck.com/subscription",
+            "svn_url": "https://github.com/lordhck/lordhck.com",
+            "tags_url": "https://api.github.com/repos/lordhck/lordhck.com/tags",
+            "teams_url": "https://api.github.com/repos/lordhck/lordhck.com/teams",
+            "topics": [],
+            "trees_url": "https://api.github.com/repos/lordhck/lordhck.com/git/trees{/sha}",
+            "updated_at": "2026-09-27T23:16:38Z",
+            "url": "https://api.github.com/repos/lordhck/lordhck.com",
+            "visibility": "public",
+            "watchers": 0,
+            "watchers_count": 0,
+            "web_commit_signoff_required": false
+          },
+          "sender": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/54715115?v=4",
+            "events_url": "https://api.github.com/users/lordhck/events{/privacy}",
+            "followers_url": "https://api.github.com/users/lordhck/followers",
+            "following_url": "https://api.github.com/users/lordhck/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lordhck/gists{/gist_id}",
+            "gravatar_id": "",
+            "html_url": "https://github.com/lordhck",
+            "id": 54715115,
+            "login": "lordhck",
+            "node_id": "MDQ6VXNlcjU0NzE1MTE1",
+            "organizations_url": "https://api.github.com/users/lordhck/orgs",
+            "received_events_url": "https://api.github.com/users/lordhck/received_events",
+            "repos_url": "https://api.github.com/users/lordhck/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/lordhck/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lordhck/subscriptions",
+            "type": "User",
+            "url": "https://api.github.com/users/lordhck",
+            "user_view_type": "public"
+          }
+        },
+        "github_job": "deploy",
+        "github_ref": "refs/heads/main",
+        "github_ref_name": "main",
+        "github_ref_protected": "false",
+        "github_ref_type": "branch",
+        "github_repository": "lordhck/lordhck.com",
+        "github_repository_id": "1391489642",
+        "github_repository_owner": "lordhck",
+        "github_repository_owner_id": "54715115",
+        "github_run_attempt": "1",
+        "github_run_id": "36358153802",
+        "github_run_number": "1",
+        "github_runner_arch": "X64",
+        "github_runner_environment": "github-hosted",
+        "github_runner_image_os": "ubuntu24",
+        "github_runner_image_version": "20260920.314.1",
+        "github_runner_name": "GitHub Actions 1000000412",
+        "github_runner_os": "Linux",
+        "github_runner_tracking_id": "github_ab6cc0cb-4a90-43b5-97d6-4f1d5a93e770",
+        "github_server_url": "https://github.com",
+        "github_triggering_actor": "lordhck",
+        "github_workflow": "Deploy",
+        "github_workflow_ref": "lordhck/lordhck.com/.github/workflows/deploy.yml@refs/heads/main",
+        "github_workflow_sha": "e06704b93d870bf5b8ace1cb494a99bca6a5a88a"
+      }
+    },
+    "runDetails": {
+      "builder": {
+        "id": "https://github.com/lordhck/lordhck.com/actions/runs/36358153802/attempts/1"
+      },
+      "metadata": {
+        "invocationId": "vzgrho5q43zhy8gwinxq00rgy",
+        "startedOn": "2026-09-27T23:17:03.789337276Z",
+        "finishedOn": "2026-09-27T23:17:15.44053048Z",
+        "buildkit_metadata": {
+          "vcs": {
+            "localdir:context": ".",
+            "localdir:dockerfile": ".",
+            "revision": "e06704b93d870bf5b8ace1cb494a99bca6a5a88a",
+            "source": "https://github.com/lordhck/lordhck.com"
+          },
+          "source": {
+            "locations": {
+              "step0": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 1
+                        },
+                        "end": {
+                          "line": 1
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step1": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 3
+                        },
+                        "end": {
+                          "line": 3
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 4
+                        },
+                        "end": {
+                          "line": 4
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 5
+                        },
+                        "end": {
+                          "line": 5
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step10": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 22
+                        },
+                        "end": {
+                          "line": 22
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step2": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 7
+                        },
+                        "end": {
+                          "line": 7
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step3": {},
+              "step4": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 10
+                        },
+                        "end": {
+                          "line": 10
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step5": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 11
+                        },
+                        "end": {
+                          "line": 11
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step6": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 13
+                        },
+                        "end": {
+                          "line": 13
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step7": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 14
+                        },
+                        "end": {
+                          "line": 14
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 15
+                        },
+                        "end": {
+                          "line": 15
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 16
+                        },
+                        "end": {
+                          "line": 16
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step8": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 17
+                        },
+                        "end": {
+                          "line": 17
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 18
+                        },
+                        "end": {
+                          "line": 18
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step9": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 19
+                        },
+                        "end": {
+                          "line": 19
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "infos": [
+              {
+                "filename": "Dockerfile",
+                "language": "Dockerfile",
+                "data": "RlJPTSBnaGNyLmlvL2FzdHJhbC1zaC91djpweXRob24zLjEyLWJvb2t3b3JtLXNsaW0gQVMgYnVpbGQKClJVTiBhcHQtZ2V0IHVwZGF0ZSBcCiAgICAmJiBhcHQtZ2V0IGluc3RhbGwgLXkgLS1uby1pbnN0YWxsLXJlY29tbWVuZHMgd2VicCBcCiAgICAmJiBybSAtcmYgL3Zhci9saWIvYXB0L2xpc3RzLyoKCldPUktESVIgL2FwcApFTlYgVVZfTElOS19NT0RFPWNvcHkKCkNPUFkgcHlwcm9qZWN0LnRvbWwgdXYubG9jayAuLwpSVU4gdXYgc3luYyAtLWZyb3plbgoKQ09QWSAuIC4KUlVOIHNjcmlwdHMvbWluaWZ5Y3NzIHN0YXRpYy9zdHlsZS5jc3MgXAogICAgJiYgcm0gc3RhdGljL3N0eWxlLmNzcyBcCiAgICAmJiBtdiBzdGF0aWMvc3R5bGUubWluLmNzcyBzdGF0aWMvc3R5bGUuY3NzClJVTiBzY3JpcHRzL2ltZ2NvbnZlcnQgXAogICAgJiYgZmluZCBzdGF0aWMvaW1ncyAtdHlwZSBmIFwoIC1pbmFtZSAnKi5qcGcnIC1vIC1pbmFtZSAnKi5qcGVnJyAtbyAtaW5hbWUgJyoucG5nJyBcKSAtZGVsZXRlClJVTiB1diBydW4gLS1mcm96ZW4gYnVpbGQucHkKCkZST00gc2NyYXRjaCBBUyBleHBvcnQKQ09QWSAtLWZyb209YnVpbGQgL2FwcC9kaXN0IC8K",
+                "llbDefinition": [
+                  {
+                    "id": "step0",
+                    "op": {
+                      "Op": {
+                        "source": {
+                          "identifier": "local://dockerfile",
+                          "attrs": {
+                            "local.differ": "none",
+                            "local.followpaths": "[\"Dockerfile\",\"Dockerfile.dockerignore\",\"dockerfile\"]",
+                            "local.sharedkeyhint": "dockerfile"
+                          }
+                        }
+                      },
+                      "constraints": {}
+                    }
+                  },
+                  {
+                    "id": "step1",
+                    "op": {
+                      "Op": {}
+                    },
+                    "inputs": [
+                      "step0:0"
+                    ]
+                  }
+                ],
+                "digestMapping": {
+                  "sha256:5e78d5a31ec095eb3832e856ada558bd37205800bc8003cdddd5949622ffd672": "step0",
+                  "sha256:ff8d7cd2819088aee6554a9fff14b5d8a290c9e5197ba1464262fdbe04a54b47": "step1"
+                }
+              }
+            ]
+          },
+          "layers": {
+            "step0:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:4831516dd0cb86845f5f902cb9b9d25b5c853152c337eb57e4737a9b7e2a2eb9",
+                  "size": 28228487
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:f59651dbc0ea4d34347e36637f7143de9a2a05badade5b0bee87893c38ad739f",
+                  "size": 3517407
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:322e9e97e47bc6b483f6658a018d5b1fbcac626debcc96684ef4311d2393b5c8",
+                  "size": 13667910
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:15155ecba1d2995bdddf42e6eb67ef7a36eca6af3cbcb123114a6bb8da48ed03",
+                  "size": 250
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:590f2846d3a720f68a8969f0bb555efc138279e08d91153308821e94a83fab3e",
+                  "size": 22786668
+                }
+              ]
+            ]
+          }
+        },
+        "buildkit_completeness": {
+          "request": true,
+          "resolvedDependencies": false
+        }
+      }
+    }
+  }
+}

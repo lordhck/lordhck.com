@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Lord J. Hackwell</title>
+    <link>https://lordhck.com/</link>
+    <description>Self-taught dev &amp; hacker. I build things, break things, and occasionally understand why they work.</description>
+    <language>en</language>
+    <managingEditor>hey@lordhck.com (Lord J. Hackwell)</managingEditor>
+    <atom:link href="https://lordhck.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Sep 2026 01:10:22 +0200</lastBuildDate>
+    <item>
+      <title>Hello World</title>
+      <link>https://lordhck.com/post/hello-world.html</link>
+      <guid isPermaLink="true">https://lordhck.com/post/hello-world.html</guid>
+      <pubDate>Mon, 28 Sep 2026 01:10:22 +0200</pubDate>
+      <author>hey@lordhck.com (Lord J. Hackwell)</author>
+      <description>The second, first post on my website.</description>
+      <content:encoded>&lt;p&gt;This is the second "first" post on my site. I've taken some time to rewrite the whole SSG.&lt;/p&gt;
+&lt;p&gt;It's still a static site generator written in Python. It takes Markdown files, reads the YAML frontmatter, and turns them into static HTML pages.&lt;/p&gt;
+&lt;p&gt;I've also added two new scripts written in Bash and Perl: &lt;code&gt;scripts/minifycss&lt;/code&gt; and &lt;code&gt;scripts/imgconvert&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can probably figure out what they do just by looking at their names:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One is a CSS minifier.&lt;/li&gt;
+&lt;li&gt;The other converts images to WebP.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The site still uses a workflow to run the build script inside a Docker container, mainly to keep builds consistent. GitHub doesn't usually allow you to just run arbitrary Python scripts inside a repository, so the workflow handles the build and deploys the generated files.&lt;/p&gt;
+&lt;p&gt;The repository itself acts as the free hosting platform.&lt;/p&gt;
+&lt;p&gt;Markdown in, static site out.&lt;/p&gt;
+&lt;p&gt;Simple idea, slightly more complex build pipeline.&lt;/p&gt;</content:encoded>
+      <category>meta</category>
+      <category>intro</category>
+    </item>
+  </channel>
+</rss>
