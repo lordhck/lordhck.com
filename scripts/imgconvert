@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+dir="$(cd "$(dirname "$0")/.." && pwd)/static/imgs"
+
+shopt -s nullglob nocaseglob
+for img in "$dir"/*.{jpg,jpeg,png}; do
+    out="${img%.*}.webp"
+    cwebp -quiet -q 80 "$img" -o "$out"
+    echo "imgconvert: ${img##*/} -> ${out##*/} ($(wc -c < "$img") -> $(wc -c < "$out") bytes)"
+done

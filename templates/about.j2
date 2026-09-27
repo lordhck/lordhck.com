@@ -1,0 +1,58 @@
+{% extends "base.j2" %}
+
+{% block content %}
+    <section class="about">
+        <figure class="about-figure">
+            <img class="about-photo" src="/static/imgs/me-openai.webp"
+                 alt="Portrait of {{ site.author }}" width="180" height="180">
+            <figcaption>How ChatGPT imagines me.</figcaption>
+        </figure>
+
+        <div>
+            <h1>{{ site.author }}</h1>
+            <p>
+                I'm a self-taught developer and hacker. My journey into programming
+                started when I was 10, after I picked up a copy of
+                <cite>Webmaster's Handbook</cite> from 1997.
+            </p>
+            <p>
+                That book introduced me to HTML, and I quickly started making my own
+                little websites. A couple of years later, at 12, I moved on to PHP
+                because I wanted to make those websites a little less boring and a
+                lot cooler.
+            </p>
+            <p>
+                I had no idea where it would lead. I just liked making things.
+            </p>
+            <p>
+                Later, I went to John Bauer College, a school with an early focus on
+                IT, entrepreneurship, and practical programs. There I studied web
+                design, programming (Java and PHP), networking, from server racks and
+                Cisco routers to writing RIP routing tables, digital technology and,
+                yes, Linux.
+            </p>
+            <p>
+                After graduating, I switched from Windows to Linux and never looked
+                back.
+            </p>
+            <p>
+                Since then, I've kept learning mostly by building things, breaking
+                things, and figuring out why they broke. I've worked with everything
+                from web development and Python to Linux, networking, servers,
+                containers, and low-level systems.
+            </p>
+            <p>
+                These days, I tend to build the things I wish existed, automate the
+                things I find annoying, and occasionally go down a rabbit hole just
+                because I want to know how something works.
+            </p>
+            <p>
+                I'm currently deep in vibe-code mode, working on a mix of tools,
+                websites, Linux projects, and other weird little ideas that probably
+                didn't need to exist, but they do now.
+            </p>
+            <p>Made in Sweden.</p>
+        </div>
+    </section>
+
+{% endblock %}

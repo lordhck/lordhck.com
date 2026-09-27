@@ -1,0 +1,36 @@
+{% macro intro() %}
+    <div>
+        <h1>Lord J. Hackwell</h1>
+        <p>
+            Self-taught dev &amp; hacker. I build things, break things, and
+            occasionally understand why they work. Currently deep in vibe-code mode.
+        </p>
+    </div>
+{% endmacro %}
+
+{% macro nav(active) %}
+    <nav>
+        <ul>
+        {% for label, href in [("Home", "/"), ("Posts", "/posts/"), ("About", "/about/")] %}
+            {% if label == active %}
+            <li><strong>{{ label }}</strong></li>
+            {% else %}
+            <li><a href="{{ href }}">{{ label }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </nav>
+{% endmacro %}
+
+{% macro post_list(posts) %}
+        <ul class="post-list">
+        {% for post in posts %}
+            <li>
+                <time class="date" datetime="{{ post.date.isoformat() }}">{{ post.date.strftime("%d %b %Y") }}</time>
+                <a class="post-link" href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+{% endmacro %}

@@ -1,0 +1,10 @@
+[project]
+name = "website"
+version = "0.1.0"
+description = "Static site generator for lordhck.com"
+requires-python = ">=3.12"
+dependencies = [
+    "jinja2>=3.1",
+    "markdown>=3.7",
+    "python-frontmatter>=1.1",
+]

@@ -1,0 +1,19 @@
+{% extends "base.j2" %}
+{% from "_macros.j2" import intro, nav, post_list %}
+
+{% block content %}
+{{ intro() }}
+
+{{ nav("Posts") }}
+    <main>
+        <h2>Posts</h2>
+
+        {% for year, year_posts in posts | groupby("date.year") | reverse %}
+        <h3>{{ year }}</h3>
+
+{{ post_list(year_posts) }}
+        {% else %}
+        <p>Nothing here yet.</p>
+        {% endfor %}
+    </main>
+{% endblock %}

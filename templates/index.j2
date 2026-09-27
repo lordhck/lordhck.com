@@ -1,0 +1,25 @@
+{% extends "base.j2" %}
+{% from "_macros.j2" import intro, nav, post_list %}
+
+{% block content %}
+{{ intro() }}
+
+{{ nav("Home") }}
+    {# Hidden until there's a release to show.
+    <section class="release">
+        <h2>Core Linux v0.4! 🎉</h2>
+        <p>
+            <a href="/showcase">View release</a>
+        </p>
+    </section>
+    #}
+
+    <main>
+        <h2>Recent Posts</h2>
+
+{{ post_list(posts[:10]) }}
+        {% if posts | length > 10 %}
+        <p><a href="/posts/">All posts →</a></p>
+        {% endif %}
+    </main>
+{% endblock %}

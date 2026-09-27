@@ -1,0 +1,33 @@
+{% extends "base.j2" %}
+
+{% block meta %}
+    <meta property="article:published_time" content="{{ post.date.isoformat() }}">
+    <meta property="article:author" content="{{ site.author }}">
+    {% for tag in post.tags %}
+    <meta property="article:tag" content="{{ tag }}">
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+    <main>
+        <article>
+            <h1>{{ post.title }}</h1>
+            <p>
+                <time class="date" datetime="{{ post.date.isoformat() }}">{{ post.date.strftime("%d %b %Y, %H:%M") }}</time>
+                {% for tag in post.tags %}
+                <span class="tag">#{{ tag }}</span>
+                {% endfor %}
+            </p>
+
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/posts/">Posts</a></li>
+                    <li aria-current="page">{{ post.title }}</li>
+                </ol>
+            </nav>
+
+            {{ post.html | safe }}
+        </article>
+    </main>
+{% endblock %}

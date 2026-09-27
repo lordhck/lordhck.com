@@ -1,0 +1,23 @@
+[site]
+name = "Lord J. Hackwell"
+author = "Lord J. Hackwell"
+email = "hey@lordhck.com"
+url = "https://lordhck.com"
+language = "en"
+
+description = "Self-taught dev & hacker. I build things, break things, and occasionally understand why they work."
+image = "/static/imgs/social-share.webp"
+
+[pages.posts]
+title = "Posts"
+description = "Every blog post, newest first."
+
+[pages.404]
+title = "Page not found"
+description = "This page doesn't exist."
+noindex = true
+
+[pages.about]
+title = "About"
+description = "About Lord J. Hackwell: self-taught dev & hacker."
+image = "/static/imgs/me-openai.webp"

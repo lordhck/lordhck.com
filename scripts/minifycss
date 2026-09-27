@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ $# -ne 1 || "$1" != *.css ]]; then
+    echo "usage: $0 <file.css>" >&2
+    exit 1
+fi
+
+src="$1"
+out="${src%.css}.min.css"
+
+perl -0777 -pe '
+    s{/\*.*?\*/}{}gs;
+    s/\s+/ /g;
+    s/\s*([{};,>])\s*/$1/g;
+    s/:\s+/:/g;
+    s/;}/}/g;
+    s/^\s+|\s+$//g;
+' "$src" > "$out"
+
+echo "minifycss: $(wc -c < "$src") -> $(wc -c < "$out") bytes"
