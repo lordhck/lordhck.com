@@ -2,6 +2,7 @@
 import json
 import re
 import shutil
+import subprocess
 import tomllib
 from datetime import date, datetime
 from pathlib import Path
@@ -150,6 +151,17 @@ def post_json_ld(post, page):
     )]})
 
 
+def git_version():
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            cwd=ROOT, capture_output=True, text=True, check=True,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return "unknown"
+    return result.stdout.strip()
+
+
 def template_pages():
     pages = []
     for path in sorted(TEMPLATES.rglob("*.j2")):
@@ -189,6 +201,7 @@ def build():
     context = {
         "site": SITE,
         "year": date.today().year,
+        "version": git_version(),
         "posts": posts,
     }
 

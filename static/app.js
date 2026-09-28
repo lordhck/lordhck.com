@@ -46,13 +46,3 @@ window.addEventListener("storage", event => {
 });
 
 applyTheme(storedTheme());
-
-fetch("https://api.github.com/repos/lordhck/lordhck.com/commits/main")
-    .then(response => response.json())
-    .then(commit => {
-        document.getElementById("version").textContent =
-            commit.sha.substring(0, 7);
-    })
-    .catch(() => {
-        document.getElementById("version").textContent = "unknown";
-    });

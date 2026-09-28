@@ -1,7 +1,7 @@
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim AS build
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends webp \
+    && apt-get install -y --no-install-recommends git webp \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
