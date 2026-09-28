@@ -340,3 +340,76 @@ footer {
         flex-direction: column;
     }
 }
+
+.footnote-ref {
+    font-family: Courier, monospace;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+
+.footnote {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 0.85em;
+    color: #666;
+}
+
+.dark .footnote {
+    border-color: #333;
+    color: #999;
+}
+
+.footnote hr {
+    display: none;
+}
+
+.footnote ol {
+    margin: 0;
+}
+
+.footnote p {
+    margin: 0.25em 0;
+}
+
+.footnote-backref {
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+/* External links: arrow as mask so it follows link color */
+a[href^="http"]:not([href*="lordhck.com"])::after {
+    --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 18l6-6M13 6l6 6'/%3E%3C/svg%3E");
+    content: "";
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    margin-left: 0.2em;
+    vertical-align: middle;
+    background-color: currentColor;
+    -webkit-mask: var(--arrow) no-repeat center / contain;
+    mask: var(--arrow) no-repeat center / contain;
+}
+
+.footnote-ref::after,
+.footnote a::after {
+    content: none !important;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 40px;
+    font-family: Courier, monospace;
+    font-size: 0.85em;
+    color: #666;
+}
+
+.dark .back-to-top {
+    color: #999;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}

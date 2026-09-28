@@ -30,6 +30,9 @@ LOCAL_IMG = re.compile(
     re.IGNORECASE,
 )
 
+# footnotes has no option to skip the ↩ backlinks
+FOOTNOTE_BACKREF = re.compile(r'&#160;<a class="footnote-backref"[^>]*>.*?</a>')
+
 # Extended or included, never rendered alone
 LAYOUTS = {"base.j2", "post.j2"}
 
@@ -74,7 +77,8 @@ def load_posts():
         doc = frontmatter.load(path)
         slug = path.stem
         url = f"/post/{slug}.html"
-        html = markdown.markdown(doc.content, extensions=["fenced_code", "tables"])
+        html = markdown.markdown(doc.content, extensions=["fenced_code", "tables", "footnotes"])
+        html = FOOTNOTE_BACKREF.sub("", html)
         # scripts/imgconvert turns these into .webp
         html = LOCAL_IMG.sub(r'\1.webp"', html)
         posts.append({
