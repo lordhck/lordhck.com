@@ -341,6 +341,11 @@ footer {
     }
 }
 
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
 .footnote-ref {
     font-family: Courier, monospace;
     font-size: 0.85em;
