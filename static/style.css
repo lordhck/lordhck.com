@@ -141,7 +141,7 @@ main {
 
 .post-list li {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     min-width: 0;
 }
 
@@ -149,6 +149,7 @@ main {
     content: ">";
     margin-right: 6px;
     font-family: Courier, monospace;
+    font-size: 0.85em;
 }
 
 .date {
