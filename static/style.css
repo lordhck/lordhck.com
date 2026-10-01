@@ -348,7 +348,7 @@ footer {
 
 .hate-list {
     grid-area: hate;
-    padding: 12px 16px;
+    padding: 10px 10px;
     border: 1px solid #ddd;
 }
 
@@ -356,7 +356,8 @@ footer {
     border-color: #333;
 }
 
-.hate-list p {
+.hate-list strong {
+    display: block;
     margin: 0 0 4px;
 }
 
