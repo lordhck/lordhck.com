@@ -5,7 +5,7 @@
     {
       "name": "404.html",
       "digest": {
-        "sha256": "e4ffe45e2b8142e4af0deeecd73197aea5d1757f38580b844e62fd350d2a012a"
+        "sha256": "9bb6b6ddc74b5ee19262a89de5c9315e722e1533173e1dc65a8b08d98c4e62e2"
       }
     },
     {
@@ -17,7 +17,7 @@
     {
       "name": "about/index.html",
       "digest": {
-        "sha256": "ec4e6d96d95810ec4ac0e49da1c26b87d32c7a354cdb85e4bcda91649a39af1a"
+        "sha256": "a8fcd9a8553ba3ab55feb586fa34ae112393b3e4168a1c0a072738e6b2c09d30"
       }
     },
     {
@@ -29,25 +29,25 @@
     {
       "name": "index.html",
       "digest": {
-        "sha256": "e0f1fe63d44898571b0463676eec05b30d3fb87b7e31d254bcfc455476db535b"
+        "sha256": "a92c62b7a47ee5d38b07ffab7566eeaa511369fa9ea526926f46442e053ce0b0"
       }
     },
     {
       "name": "post/hello-world.html",
       "digest": {
-        "sha256": "2b297798f004a497d2ee9b80bf80b659239bb040bead5ce635ca8cc8d04a5ff4"
+        "sha256": "8fa637f22a190f108b108ed2c907436217c8ce56c0cc63edf72a631bb5dd4318"
       }
     },
     {
       "name": "post/terminal-email.html",
       "digest": {
-        "sha256": "65619b8a6d29ac5e366dc7cdf2ede82b364b3dd97ad7c2e13660bab407c87dc0"
+        "sha256": "6052e6a81e572f6daf6d68e33beec52d191bf89dd847114574a964c92bd25d98"
       }
     },
     {
       "name": "posts/index.html",
       "digest": {
-        "sha256": "92e5f295038b54decd68c1abe81fe73f054a70b27b67fabb743d4973dab6afb6"
+        "sha256": "92851e2546887f8ddecd4dbf357ce50fee891a9ee7c1100ac12c4e9923948137"
       }
     },
     {
@@ -95,7 +95,7 @@
     {
       "name": "static/style.css",
       "digest": {
-        "sha256": "ddc4000f6491221aec70c3a73c5eb735083f659e2b7dce837b34e11e87b245c4"
+        "sha256": "52f59c34f18744fe86ff72ae88cbdc53b6ac9959a2c37643b0814918dca6f9bf"
       }
     }
   ],
@@ -132,7 +132,7 @@
               "args": {
                 "vcs:localdir:context": ".",
                 "vcs:localdir:dockerfile": ".",
-                "vcs:revision": "162304abed4ed6e5338f921a69af1d210675a228",
+                "vcs:revision": "60f7de2d22409bfdd17f3db85f9992e3a2e4453b",
                 "vcs:source": "https://github.com/lordhck/lordhck.com"
               }
             }
@@ -143,18 +143,18 @@
       "internalParameters": {
         "buildConfig": {
           "digestMapping": {
-            "sha256:375796a66f3e2258b252cdcea55373b496b2d27f562f68a49983b3380f68185a": "step11",
+            "sha256:1c195bb2917895266682fb92f2d5b2100352e214d91c146e75b32debc202d843": "step3",
             "sha256:3bfc8d48886857b4fb62cc72c3e471f98fd48d963dac86463c1d3f56d790e4e1": "step2",
-            "sha256:4095ee8bc0abce23bb8809ccb89057cbb68fcf374ad2b50c8556d18abc74fe78": "step3",
-            "sha256:464bf260f8de04a3108936bc59c5a618fbd2230bb31fb9b1412910766e19950d": "step7",
+            "sha256:48c0172dd812c6c55c3e08fa322fa935a6491c4fc454c9ee129dee28c1734f34": "step10",
             "sha256:4eef146e54d7c9a44bbeb9b8c75de41c0ab49c615c46ea1343cd52b52e9c965a": "step1",
             "sha256:66be4bc85442b631e1d34f340cac92233d7beb99a6332f84e2a3c8b943ec17f7": "step0",
-            "sha256:69d31b0e423e4d0b91c4b7116e7cab1bd902a416f898c60fb43cf23782ce9944": "step6",
-            "sha256:7636ef94582986d5c11a172a2d0caff0f32cca476ba31b1e2511cbc2013dedd8": "step4",
-            "sha256:7bb373a4cc77c310e87a9b135dfe29aeb1998c5deb05bd44f52d9699132b896c": "step5",
-            "sha256:98535ad72c19ae9e9d101dd5daea557846fdba37899da5a6458c499fef4e4071": "step9",
-            "sha256:b565b954cd85ae7874b1b461d193277a13f452e4ef59c5a1c162e920780dbd2a": "step8",
-            "sha256:d2185ee5a5ca9713da4eca1aca363bf073edb495ac8c55f4247188972f6cea0c": "step10"
+            "sha256:6de3928e64a2b900a26d1aff4b1c3e64ba0ebcc982102ce8a83abd015fe5a7ad": "step6",
+            "sha256:74600b5f84159e0f2f7b108f83b32e91490c37b24aa7b298fea2325c208f11f2": "step11",
+            "sha256:a5164915a9f6a1551c7a6feef882097bb5d2bbd844ed90bd46914fa628166a2d": "step4",
+            "sha256:b4de2bfed2b87c04189242e19f4dcf015f84f734626a960ea2e0dad320ea5132": "step8",
+            "sha256:bc75cd5ff86925bdb0df96e03bf536ac0d1aa231e5aaa2c4ea71a83c866125cf": "step7",
+            "sha256:e6881519dcbbcf53b9d3aa2b63260bc15e5f308f8ece854ad7f5e402e6b39af3": "step9",
+            "sha256:f5be0f839220c0ffc1279a673f3d24cf888a9e2743deebca08cbe4c51147dc97": "step5"
           },
           "llbDefinition": [
             {
@@ -550,9 +550,9 @@
         "github_actor_id": "54715115",
         "github_event_name": "push",
         "github_event_payload": {
-          "after": "162304abed4ed6e5338f921a69af1d210675a228",
+          "after": "60f7de2d22409bfdd17f3db85f9992e3a2e4453b",
           "base_ref": null,
-          "before": "fb26ea98806bae440303dfdc9cebef339d923358",
+          "before": "162304abed4ed6e5338f921a69af1d210675a228",
           "commits": [
             {
               "author": {
@@ -566,14 +566,14 @@
                 "username": "lordhck"
               },
               "distinct": true,
-              "id": "162304abed4ed6e5338f921a69af1d210675a228",
-              "message": "fix(style): center post list rows",
-              "timestamp": "2026-10-01T00:56:13+02:00",
-              "tree_id": "c0e2ffe7f666b17c72848dd45b8a4f7815738e70",
-              "url": "https://github.com/lordhck/lordhck.com/commit/162304abed4ed6e5338f921a69af1d210675a228"
+              "id": "60f7de2d22409bfdd17f3db85f9992e3a2e4453b",
+              "message": "feat(about): add things I hate box",
+              "timestamp": "2026-10-01T03:31:38+02:00",
+              "tree_id": "73b3b1cb50786e1f9d3fa497c0db1a5b0f53768e",
+              "url": "https://github.com/lordhck/lordhck.com/commit/60f7de2d22409bfdd17f3db85f9992e3a2e4453b"
             }
           ],
-          "compare": "https://github.com/lordhck/lordhck.com/compare/fb26ea98806b...162304abed4e",
+          "compare": "https://github.com/lordhck/lordhck.com/compare/162304abed4e...60f7de2d2240",
           "created": false,
           "deleted": false,
           "forced": false,
@@ -589,11 +589,11 @@
               "username": "lordhck"
             },
             "distinct": true,
-            "id": "162304abed4ed6e5338f921a69af1d210675a228",
-            "message": "fix(style): center post list rows",
-            "timestamp": "2026-10-01T00:56:13+02:00",
-            "tree_id": "c0e2ffe7f666b17c72848dd45b8a4f7815738e70",
-            "url": "https://github.com/lordhck/lordhck.com/commit/162304abed4ed6e5338f921a69af1d210675a228"
+            "id": "60f7de2d22409bfdd17f3db85f9992e3a2e4453b",
+            "message": "feat(about): add things I hate box",
+            "timestamp": "2026-10-01T03:31:38+02:00",
+            "tree_id": "73b3b1cb50786e1f9d3fa497c0db1a5b0f53768e",
+            "url": "https://github.com/lordhck/lordhck.com/commit/60f7de2d22409bfdd17f3db85f9992e3a2e4453b"
           },
           "pusher": {
             "email": "lordhck@niton.dev",
@@ -685,9 +685,9 @@
             "private": false,
             "pull_request_creation_policy": "all",
             "pulls_url": "https://api.github.com/repos/lordhck/lordhck.com/pulls{/number}",
-            "pushed_at": 1790808978,
+            "pushed_at": 1790818303,
             "releases_url": "https://api.github.com/repos/lordhck/lordhck.com/releases{/id}",
-            "size": 500,
+            "size": 512,
             "ssh_url": "git@github.com:lordhck/lordhck.com.git",
             "stargazers": 0,
             "stargazers_count": 0,
@@ -700,7 +700,7 @@
             "teams_url": "https://api.github.com/repos/lordhck/lordhck.com/teams",
             "topics": [],
             "trees_url": "https://api.github.com/repos/lordhck/lordhck.com/git/trees{/sha}",
-            "updated_at": "2026-09-30T22:11:55Z",
+            "updated_at": "2026-09-30T22:56:22Z",
             "url": "https://api.github.com/repos/lordhck/lordhck.com",
             "visibility": "public",
             "watchers": 0,
@@ -739,35 +739,35 @@
         "github_repository_owner": "lordhck",
         "github_repository_owner_id": "54715115",
         "github_run_attempt": "1",
-        "github_run_id": "36788388783",
-        "github_run_number": "10",
+        "github_run_id": "36801527482",
+        "github_run_number": "11",
         "github_runner_arch": "X64",
         "github_runner_environment": "github-hosted",
         "github_runner_image_os": "ubuntu24",
-        "github_runner_image_version": "20260920.314.1",
-        "github_runner_name": "GitHub Actions 1000000448",
+        "github_runner_image_version": "20260927.320.1",
+        "github_runner_name": "GitHub Actions 1000000452",
         "github_runner_os": "Linux",
-        "github_runner_tracking_id": "github_13d57e8a-631e-4f89-bd3b-b9836532643c",
+        "github_runner_tracking_id": "github_f3dd84c6-1873-4bf9-a2a1-468effccf20b",
         "github_server_url": "https://github.com",
         "github_triggering_actor": "lordhck",
         "github_workflow": "Deploy",
         "github_workflow_ref": "lordhck/lordhck.com/.github/workflows/deploy.yml@refs/heads/main",
-        "github_workflow_sha": "162304abed4ed6e5338f921a69af1d210675a228"
+        "github_workflow_sha": "60f7de2d22409bfdd17f3db85f9992e3a2e4453b"
       }
     },
     "runDetails": {
       "builder": {
-        "id": "https://github.com/lordhck/lordhck.com/actions/runs/36788388783/attempts/1"
+        "id": "https://github.com/lordhck/lordhck.com/actions/runs/36801527482/attempts/1"
       },
       "metadata": {
-        "invocationId": "m5xie4iicyca7dz9fpyrv51vp",
-        "startedOn": "2026-09-30T22:56:36.227654974Z",
-        "finishedOn": "2026-09-30T22:56:46.797971428Z",
+        "invocationId": "mrkxi2o8mgbb2ro37x4rxjz4f",
+        "startedOn": "2026-10-01T01:31:58.735724074Z",
+        "finishedOn": "2026-10-01T01:32:07.244711333Z",
         "buildkit_metadata": {
           "vcs": {
             "localdir:context": ".",
             "localdir:dockerfile": ".",
-            "revision": "162304abed4ed6e5338f921a69af1d210675a228",
+            "revision": "60f7de2d22409bfdd17f3db85f9992e3a2e4453b",
             "source": "https://github.com/lordhck/lordhck.com"
           },
           "source": {
@@ -1007,8 +1007,8 @@
                   }
                 ],
                 "digestMapping": {
-                  "sha256:51e565fddfde152553fb39e4280af6fd5df3b3fdfa30940a8e26d2eacb13ae31": "step1",
-                  "sha256:b61d02ce808cc464b09f80aec4b75cf037850ce95c42f5be3c2da4b161d12e18": "step0"
+                  "sha256:64741399431967d30161bb4160cc9e463d3cd3f4430f2cf345ed7b902a501f5e": "step0",
+                  "sha256:b12b9cc4a586de25027bf48537ba3a7efc03477093aa21bffdc026d753469d6d": "step1"
                 }
               }
             ]
