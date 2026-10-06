@@ -5,7 +5,7 @@
     {
       "name": "404.html",
       "digest": {
-        "sha256": "f5c42bd01f68280997530bc80ed63b481f303f438bc9a2cd294a03d07d338281"
+        "sha256": "2d826f4ed14ced152911ddcc2778ea7e6e1823c35cd6fc270ceeba38791574eb"
       }
     },
     {
@@ -17,7 +17,7 @@
     {
       "name": "about/index.html",
       "digest": {
-        "sha256": "45c7ddf9f39c98bb3282d534a5464bff6296c49ec7a61653b9176485bea04cc2"
+        "sha256": "e44d6fe43c58b78c104e39b22941fb2a76ae7e600a2bfcf84e2ed85eba631d62"
       }
     },
     {
@@ -29,25 +29,37 @@
     {
       "name": "index.html",
       "digest": {
-        "sha256": "c46b92ac3efb1fa36a719340a0c6f532055c9dce64e934438181fc35dfb68927"
+        "sha256": "c1ad3366cf3f8938b17d45a48d53c4fe36523e7c348eb1052d3d9dd89306480a"
+      }
+    },
+    {
+      "name": "manifest.webmanifest",
+      "digest": {
+        "sha256": "bd4e7ba8fa41c3e3f93372be94f2b629b6a93bfdf1cf23ceb894300fca71a922"
+      }
+    },
+    {
+      "name": "offline/index.html",
+      "digest": {
+        "sha256": "71b75fcb56ad6628dd0bb133723652062c03bb2a8ff0e00eaeef8bf7b9f86dc4"
       }
     },
     {
       "name": "post/hello-world.html",
       "digest": {
-        "sha256": "0d9739785d66828c9587ceeb848414e640c32b01877a85b7aa351d735bed6367"
+        "sha256": "47f1dee18e44ec77bb46ce5a8dcc725355de05ee45925d8da7e6605855a9bbc1"
       }
     },
     {
       "name": "post/terminal-email.html",
       "digest": {
-        "sha256": "508adb70610da9c4fef6bdbb3beaf3f831734347e340b9abc7b415eca6754dbb"
+        "sha256": "77e3eda147ee8bc2bc1b836088e1000948421d693f928833224df606ed2f36ba"
       }
     },
     {
       "name": "posts/index.html",
       "digest": {
-        "sha256": "271cb2bcba82d6ced9007ba032db1c68a119b3132971ede6a1ba927479bd95fe"
+        "sha256": "081237d25f7aefc91d8210431382ac3e9d7327249a335c481153d585a7638b0b"
       }
     },
     {
@@ -65,7 +77,7 @@
     {
       "name": "static/app.js",
       "digest": {
-        "sha256": "5bc3825cb72ceefadff627bdb18c994691650affcb622a1f6547a331563a89de"
+        "sha256": "ee6e71088565dc4fc0de9932a5c0bb8c2d5a34a80bff379a43d149c72ed20daa"
       }
     },
     {
@@ -78,6 +90,36 @@
       "name": "static/favicon.svg",
       "digest": {
         "sha256": "aa20d6368c193910256fbddeb0c3523c4082c3c1ab0027cfdde175db3c13e845"
+      }
+    },
+    {
+      "name": "static/icons/apple-touch-icon.png",
+      "digest": {
+        "sha256": "5a980e73b8572ff4ef0852d62c6be92326cdf2d4ef6696d76d940db3ab3d08f2"
+      }
+    },
+    {
+      "name": "static/icons/icon-192.png",
+      "digest": {
+        "sha256": "a31c5b28c3bb39023e575261eb959b3c2571d329e17a2d717f87898085d95ad8"
+      }
+    },
+    {
+      "name": "static/icons/icon-512.png",
+      "digest": {
+        "sha256": "64f74444ad313fe02c37f42b7e516faa58a71b58d730709d3f40c5c729effcc0"
+      }
+    },
+    {
+      "name": "static/icons/maskable-192.png",
+      "digest": {
+        "sha256": "b80cdfc8590c5d1b8fd7ead461312674c22ae6c8b8e7a5ab353344352340218c"
+      }
+    },
+    {
+      "name": "static/icons/maskable-512.png",
+      "digest": {
+        "sha256": "db47680cdb8ed1909e279717a3e50e9cc62095607ce5e43e4b7b774c630798e0"
       }
     },
     {
@@ -102,6 +144,12 @@
       "name": "static/style.css",
       "digest": {
         "sha256": "db5ec1f29b9f6fb2ce409293e529ec29bad12a62cb873c09232adbe60802bdd6"
+      }
+    },
+    {
+      "name": "sw.js",
+      "digest": {
+        "sha256": "95c01211a43a3e87563d92ebf28ce94dde18b483b753f39f766e6a32252450b8"
       }
     }
   ],
@@ -138,7 +186,7 @@
               "args": {
                 "vcs:localdir:context": ".",
                 "vcs:localdir:dockerfile": ".",
-                "vcs:revision": "46ccfbf50068d18fadb3310b62d37158465240ef",
+                "vcs:revision": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
                 "vcs:source": "https://github.com/lordhck/lordhck.com"
               }
             }
@@ -149,18 +197,18 @@
       "internalParameters": {
         "buildConfig": {
           "digestMapping": {
-            "sha256:20297d0e803a001149c398227566c5a95e77c608adc12dd26f68b5a6959fb258": "step8",
-            "sha256:327a4fc727a6a76abc243ea8e8934d204eebe6b97e2585340399ca5d1a618457": "step3",
+            "sha256:06609fdb602c58d219f08cdd2849f5fdb8282f1705e666fc3a95232b51dc319b": "step9",
+            "sha256:33fe793bec8b663ef54cfa08bef772fabcc3d0d366ab9628a444321c358c8972": "step3",
             "sha256:3bfc8d48886857b4fb62cc72c3e471f98fd48d963dac86463c1d3f56d790e4e1": "step2",
-            "sha256:3e37d45c587800e247a8778999ac5e61acc12310e0da258ad9fd2cfe0d81c070": "step6",
-            "sha256:46b62e3c8a38f5647544918ddb1807c10bd70dbd0e143d53d214200bb54c22c6": "step9",
-            "sha256:4c9cf99306fce29531a07c5bd8b70733a1332c533bd6788ffa7bcb62aba8a56e": "step4",
+            "sha256:47811662cef29285bd0b9e0e0a8326c76a94a4104712ca2077cddfac67cc84d4": "step4",
             "sha256:4eef146e54d7c9a44bbeb9b8c75de41c0ab49c615c46ea1343cd52b52e9c965a": "step1",
-            "sha256:5a4fecb847c9dffb44374797d1cbbd106df9ad0b7fa7e1b1e494d4784ff2e38d": "step10",
             "sha256:66be4bc85442b631e1d34f340cac92233d7beb99a6332f84e2a3c8b943ec17f7": "step0",
-            "sha256:961e58ca7225b7cd0309f39be304d72c773dd9823f331eabc92fccca0617906f": "step11",
-            "sha256:bddcde877c487e466ecca50b35375b414967516ae8e561503498b4faf992fc40": "step5",
-            "sha256:d2f431d41ee6c26d91a802d6aef3bf55669c20262e90efa3dbb6e3a1ee1c95cf": "step7"
+            "sha256:84d5561a79adea5db496b4f15d948c6680a58a305961af2c7fadbc893d2ba01f": "step5",
+            "sha256:ca76c6fcfb272d7b453a0d074edb396114c7833d90b06a10e112579fb0e72500": "step10",
+            "sha256:dc6dc139be437c8d568acd5acb3273651c2c0a487a32400efb5581049e4f8c0f": "step6",
+            "sha256:e361969539b9252cd7a39bd4dee40bb44d35ae892b685fa754adb526a9fac1db": "step7",
+            "sha256:f44ff9c37eae1d3aeceba1aac71f1d2661b619c8ef54dce236001633b19a39f1": "step11",
+            "sha256:fcf64b33eb290d9f3f75986085f691bc79382829f9556da9d45c9525d7eb8d2f": "step8"
           },
           "llbDefinition": [
             {
@@ -556,9 +604,9 @@
         "github_actor_id": "54715115",
         "github_event_name": "push",
         "github_event_payload": {
-          "after": "46ccfbf50068d18fadb3310b62d37158465240ef",
+          "after": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
           "base_ref": null,
-          "before": "10c6f05ccb1cefb21d65fe7f8268ff2ee892c14d",
+          "before": "46ccfbf50068d18fadb3310b62d37158465240ef",
           "commits": [
             {
               "author": {
@@ -572,14 +620,14 @@
                 "username": "lordhck"
               },
               "distinct": true,
-              "id": "46ccfbf50068d18fadb3310b62d37158465240ef",
-              "message": "feat(logo): replace logo",
-              "timestamp": "2026-10-06T22:16:27+02:00",
-              "tree_id": "24cd5355a82ced7aad424e1412d92ea2be35d6b5",
-              "url": "https://github.com/lordhck/lordhck.com/commit/46ccfbf50068d18fadb3310b62d37158465240ef"
+              "id": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
+              "message": "feat(pwa): add manifest, icons and offline worker",
+              "timestamp": "2026-10-06T22:40:29+02:00",
+              "tree_id": "839bf2ee99aebcf54506614982eae249bfaafe31",
+              "url": "https://github.com/lordhck/lordhck.com/commit/44885bb9a5e85b3116b4069ffa80eab45b69ea36"
             }
           ],
-          "compare": "https://github.com/lordhck/lordhck.com/compare/10c6f05ccb1c...46ccfbf50068",
+          "compare": "https://github.com/lordhck/lordhck.com/compare/46ccfbf50068...44885bb9a5e8",
           "created": false,
           "deleted": false,
           "forced": false,
@@ -595,11 +643,11 @@
               "username": "lordhck"
             },
             "distinct": true,
-            "id": "46ccfbf50068d18fadb3310b62d37158465240ef",
-            "message": "feat(logo): replace logo",
-            "timestamp": "2026-10-06T22:16:27+02:00",
-            "tree_id": "24cd5355a82ced7aad424e1412d92ea2be35d6b5",
-            "url": "https://github.com/lordhck/lordhck.com/commit/46ccfbf50068d18fadb3310b62d37158465240ef"
+            "id": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
+            "message": "feat(pwa): add manifest, icons and offline worker",
+            "timestamp": "2026-10-06T22:40:29+02:00",
+            "tree_id": "839bf2ee99aebcf54506614982eae249bfaafe31",
+            "url": "https://github.com/lordhck/lordhck.com/commit/44885bb9a5e85b3116b4069ffa80eab45b69ea36"
           },
           "pusher": {
             "email": "lordhck@niton.dev",
@@ -691,7 +739,7 @@
             "private": false,
             "pull_request_creation_policy": "all",
             "pulls_url": "https://api.github.com/repos/lordhck/lordhck.com/pulls{/number}",
-            "pushed_at": 1791317793,
+            "pushed_at": 1791319235,
             "releases_url": "https://api.github.com/repos/lordhck/lordhck.com/releases{/id}",
             "size": 522,
             "ssh_url": "git@github.com:lordhck/lordhck.com.git",
@@ -706,7 +754,7 @@
             "teams_url": "https://api.github.com/repos/lordhck/lordhck.com/teams",
             "topics": [],
             "trees_url": "https://api.github.com/repos/lordhck/lordhck.com/git/trees{/sha}",
-            "updated_at": "2026-10-06T19:55:05Z",
+            "updated_at": "2026-10-06T20:16:37Z",
             "url": "https://api.github.com/repos/lordhck/lordhck.com",
             "visibility": "public",
             "watchers": 0,
@@ -745,35 +793,35 @@
         "github_repository_owner": "lordhck",
         "github_repository_owner_id": "54715115",
         "github_run_attempt": "1",
-        "github_run_id": "37525207800",
-        "github_run_number": "14",
+        "github_run_id": "37528250124",
+        "github_run_number": "15",
         "github_runner_arch": "X64",
         "github_runner_environment": "github-hosted",
         "github_runner_image_os": "ubuntu24",
         "github_runner_image_version": "20260927.320.1",
-        "github_runner_name": "GitHub Actions 1000000464",
+        "github_runner_name": "GitHub Actions 1000000468",
         "github_runner_os": "Linux",
-        "github_runner_tracking_id": "github_dc547731-7f2e-4826-aadb-8890e8938f85",
+        "github_runner_tracking_id": "github_ccebedc9-41eb-4824-baf9-6ff0cc87f83e",
         "github_server_url": "https://github.com",
         "github_triggering_actor": "lordhck",
         "github_workflow": "Deploy",
         "github_workflow_ref": "lordhck/lordhck.com/.github/workflows/deploy.yml@refs/heads/main",
-        "github_workflow_sha": "46ccfbf50068d18fadb3310b62d37158465240ef"
+        "github_workflow_sha": "44885bb9a5e85b3116b4069ffa80eab45b69ea36"
       }
     },
     "runDetails": {
       "builder": {
-        "id": "https://github.com/lordhck/lordhck.com/actions/runs/37525207800/attempts/1"
+        "id": "https://github.com/lordhck/lordhck.com/actions/runs/37528250124/attempts/1"
       },
       "metadata": {
-        "invocationId": "fie1bxzipx2t8wuvkq3pd3f6v",
-        "startedOn": "2026-10-06T20:16:49.146124787Z",
-        "finishedOn": "2026-10-06T20:16:59.890160456Z",
+        "invocationId": "ykv6dclub2zpgpwpwv54zcgmk",
+        "startedOn": "2026-10-06T20:41:30.721603084Z",
+        "finishedOn": "2026-10-06T20:41:38.762991783Z",
         "buildkit_metadata": {
           "vcs": {
             "localdir:context": ".",
             "localdir:dockerfile": ".",
-            "revision": "46ccfbf50068d18fadb3310b62d37158465240ef",
+            "revision": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
             "source": "https://github.com/lordhck/lordhck.com"
           },
           "source": {
@@ -1013,8 +1061,8 @@
                   }
                 ],
                 "digestMapping": {
-                  "sha256:949f70e67e7ce83563d8a6dcf16c3c3a111a35de79a534b0247fb4b24cf1198f": "step1",
-                  "sha256:c7f7e2eb91b76c35525a3f66b6cf5e958c82491e51e3eb21187446d383805566": "step0"
+                  "sha256:3bb65fac3874ac7ace6732ee423f19e077778026e885a37be0b6851fbb81dc3a": "step0",
+                  "sha256:e6654c04f864a592a3a443d0f4108d07d867603ba7273d9e1b0e0be1199e07fd": "step1"
                 }
               }
             ]

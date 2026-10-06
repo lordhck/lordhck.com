@@ -4,6 +4,7 @@ const themeCycle = document.getElementById("theme-cycle");
 const themeValue = themeCycle.querySelector(".theme-value");
 const THEMES = ["light", "dark", "system"];
 const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+const themeColor = document.querySelector('meta[name="theme-color"]');
 
 function storedTheme() {
     try {
@@ -17,6 +18,8 @@ function storedTheme() {
 function applyTheme(theme) {
     const dark = theme === "dark" || (theme === "system" && systemDark.matches);
     document.documentElement.classList.toggle("dark", dark);
+    // App title bar follows the page background
+    themeColor.content = dark ? "#111111" : "#ffffff";
     darkMode.checked = dark;
     themeValue.textContent = theme;
 }
@@ -46,3 +49,7 @@ window.addEventListener("storage", event => {
 });
 
 applyTheme(storedTheme());
+
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js"));
+}
