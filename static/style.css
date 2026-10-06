@@ -450,6 +450,177 @@ a[href^="http"]:not([href*="lordhck.com"])::after {
     color: #999;
 }
 
+:root {
+    --code-bg: #f4f4f4;
+    --code-fg: #222;
+    --code-border: #ddd;
+    --code-muted: #666;
+    /* keyword, YAML key, Dockerfile instruction */
+    --tk-k: #7a3e9d;
+    --tk-s: #3b7a3b;
+    --tk-c: #8a8a8a;
+    /* number, bool, null */
+    --tk-n: #b35c00;
+    /* function, decorator */
+    --tk-f: #2a5db0;
+    /* $VAR, ${...}, YAML anchors */
+    --tk-v: #a33a3a;
+}
+
+:root.dark {
+    --code-bg: #1e1e1e;
+    --code-fg: #ddd;
+    --code-border: #333;
+    --code-muted: #999;
+    --tk-k: #c5a3e0;
+    --tk-s: #a3c99a;
+    --tk-c: #6f6f6f;
+    --tk-n: #e0a96d;
+    --tk-f: #8fb3e8;
+    --tk-v: #e09090;
+}
+
+.code,
+.term {
+    position: relative;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+    overflow: hidden;
+    font: 14px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+.code {
+    color: var(--code-fg);
+    background: var(--code-bg);
+    border: 1px solid var(--code-border);
+}
+
+.code pre,
+.term pre {
+    margin: 0;
+    padding: 0.9rem 1rem;
+    overflow-x: auto;
+    font: inherit;
+}
+
+/* UA sets code to plain monospace */
+.code code,
+.term code {
+    font: inherit;
+}
+
+.code-bar,
+.term-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.6rem 0.35rem 1rem;
+    font-size: 12px;
+}
+
+.code-bar {
+    color: var(--code-muted);
+    border-bottom: 1px solid var(--code-border);
+}
+
+.copy {
+    margin-left: auto;
+    padding: 0.15rem 0.4rem;
+    border: 0;
+    border-radius: 4px;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.copy:hover,
+.copy:focus-visible {
+    opacity: 1;
+}
+
+.copy:focus-visible {
+    outline: 1px solid currentColor;
+}
+
+.copy.ok {
+    color: #28c840;
+    opacity: 1;
+}
+
+.copy svg {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 0 auto;
+}
+
+.k {
+    color: var(--tk-k);
+}
+
+.s {
+    color: var(--tk-s);
+}
+
+.c {
+    color: var(--tk-c);
+    font-style: italic;
+}
+
+.n {
+    color: var(--tk-n);
+}
+
+.f {
+    color: var(--tk-f);
+}
+
+.v {
+    color: var(--tk-v);
+}
+
+/* Terminal stays dark in both themes */
+.term {
+    color: #e6e6e6;
+    background: #1c1c1e;
+}
+
+.term-bar {
+    color: #8e8e93;
+    background: #2a2a2c;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot:nth-child(1) {
+    background: #ff5f57;
+}
+
+.dot:nth-child(2) {
+    background: #febc2e;
+}
+
+.dot:nth-child(3) {
+    margin-right: 0.5rem;
+    background: #28c840;
+}
+
+.term .cmd::before {
+    content: "$ ";
+    color: #28c840;
+    user-select: none;
+}
+
+.term .out {
+    color: #8e8e93;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
