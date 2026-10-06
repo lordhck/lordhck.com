@@ -65,26 +65,6 @@ header a:hover {
     opacity: 0.7;
 }
 
-.logo-bg {
-    fill: #ececec;
-}
-
-.dark .logo-bg {
-    fill: #2a2a2a;
-}
-
-.logo-mark {
-    fill: none;
-    stroke: #555;
-    stroke-width: 3;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-.dark .logo-mark {
-    stroke: #aaa;
-}
-
 header .links {
     display: flex;
     align-items: center;
