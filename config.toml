@@ -1,5 +1,6 @@
 [site]
 name = "Lord J. Hackwell"
+short_name = "lordhck"
 author = "Lord J. Hackwell"
 email = "hey@lordhck.com"
 url = "https://lordhck.com"
@@ -15,6 +16,11 @@ description = "Every blog post, newest first."
 [pages.404]
 title = "Page not found"
 description = "This page doesn't exist."
+noindex = true
+
+[pages.offline]
+title = "Offline"
+description = "This page isn't saved for offline reading."
 noindex = true
 
 [pages.about]

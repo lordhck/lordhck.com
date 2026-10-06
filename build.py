@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import hashlib
 import json
 import re
 import shutil
@@ -38,6 +39,8 @@ LAYOUTS = {"base.j2", "post.j2"}
 
 # Not moved into <name>/index.html
 FLAT_PAGES = {"index", "404"}
+
+MANIFEST = "manifest.webmanifest"
 
 
 def load_post_meta(path, meta):
@@ -188,6 +191,55 @@ def write_robots():
     (DIST / "robots.txt").write_text(robots, encoding="utf-8")
 
 
+def icon(name, size, purpose="any"):
+    return {"src": f"/static/icons/{name}", "sizes": f"{size}x{size}", "type": "image/png", "purpose": purpose}
+
+
+def write_manifest():
+    manifest = {
+        "id": "/",
+        "name": SITE["name"],
+        "short_name": SITE["short_name"],
+        "description": SITE["description"],
+        "lang": SITE["language"],
+        "start_url": "/",
+        "scope": "/",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "theme_color": "#ffffff",
+        "icons": [
+            icon("icon-192.png", 192),
+            icon("icon-512.png", 512),
+            icon("maskable-192.png", 192, "maskable"),
+            icon("maskable-512.png", 512, "maskable"),
+        ],
+        "shortcuts": [
+            {"name": "Posts", "url": "/posts/"},
+            {"name": "About", "url": "/about/"},
+        ],
+    }
+    text = json.dumps(manifest, ensure_ascii=False, indent=2)
+    (DIST / MANIFEST).write_text(text + "\n", encoding="utf-8")
+
+
+def precache_files():
+    pages = DIST.rglob("*.html")
+    # Images are cached once viewed instead
+    assets = (p for p in (DIST / "static").rglob("*") if p.is_file() and "imgs" not in p.parts)
+    return sorted([*pages, *assets, DIST / MANIFEST])
+
+
+def write_service_worker(env):
+    files = precache_files()
+    digest = hashlib.sha256()
+    for path in files:
+        digest.update(path.read_bytes())
+    urls = ["/" + p.relative_to(DIST).as_posix().removesuffix("index.html") for p in files]
+    # New hash on any change, so browsers update
+    sw = env.get_template("sw.js").render(cache=f"site-{digest.hexdigest()[:12]}", precache=urls)
+    (DIST / "sw.js").write_text(sw, encoding="utf-8")
+
+
 def build():
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -246,12 +298,16 @@ def build():
         shutil.copy(ROOT / "CNAME", DIST / "CNAME")
 
     write_robots()
+    write_manifest()
 
     from genfeed import write_feed
     write_feed(posts)
 
     from sitemap import write_sitemap
     write_sitemap(posts)
+
+    # Last, it hashes everything above
+    write_service_worker(env)
 
 
 if __name__ == "__main__":
