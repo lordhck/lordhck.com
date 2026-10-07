@@ -235,6 +235,36 @@ footer {
     font-size: 4em;
 }
 
+/* Offline screen stays dark in both themes; 600px is 4x the canvas */
+.offline-screen {
+    position: relative;
+    max-width: 600px;
+    margin: 30px 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #111;
+}
+
+.offline-screen canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 18px rgba(138, 180, 248, 0.35));
+    touch-action: manipulation;
+    user-select: none;
+}
+
+/* Faint scanlines, fading out at the edges */
+.offline-screen::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(transparent 0 2px, rgba(0, 0, 0, 0.2) 2px 3px);
+    mask-image: radial-gradient(closest-side, #000 60%, transparent);
+    pointer-events: none;
+}
+
 .breadcrumbs {
     margin: 0 0 30px;
     font-size: 0.8em;

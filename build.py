@@ -205,8 +205,8 @@ def write_manifest():
         "start_url": "/",
         "scope": "/",
         "display": "standalone",
-        "background_color": "#ffffff",
-        "theme_color": "#ffffff",
+        "background_color": "#111",
+        "theme_color": "#111",
         "icons": [
             icon("icon-192.png", 192),
             icon("icon-512.png", 512),

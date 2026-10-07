@@ -2,11 +2,17 @@
 
 {% block content %}
     <main class="not-found">
-        <h1>Offline</h1>
+        <h1 class="offline-screen" hidden>
+            <canvas width="150" height="64" role="img" aria-label="Offline"></canvas>
+        </h1>
         <p>
             You're offline and this page isn't saved on this device yet.
             Reconnect and try again.
         </p>
         <p><a href="/">Back home</a> or <a href="/posts/">browse all posts</a>.</p>
     </main>
+{% endblock %}
+
+{% block scripts %}
+    <script src="/static/offline.js"></script>
 {% endblock %}
