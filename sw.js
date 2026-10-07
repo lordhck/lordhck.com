@@ -1,5 +1,5 @@
-const CACHE = "site-c598626eac55";
-const PRECACHE = ["/404.html", "/about/", "/", "/manifest.webmanifest", "/offline/", "/post/hello-world.html", "/post/terminal-email.html", "/posts/", "/static/app.js", "/static/code.js", "/static/favicon.svg", "/static/icons/apple-touch-icon.png", "/static/icons/icon-192.png", "/static/icons/icon-512.png", "/static/icons/maskable-192.png", "/static/icons/maskable-512.png", "/static/style.css"];
+const CACHE = "site-db9ab125dca0";
+const PRECACHE = ["/404.html", "/about/", "/", "/manifest.webmanifest", "/offline/", "/post/hello-world.html", "/post/terminal-email.html", "/posts/", "/static/app.js", "/static/code.js", "/static/favicon.svg", "/static/icons/apple-touch-icon.png", "/static/icons/icon-192.png", "/static/icons/icon-512.png", "/static/icons/maskable-192.png", "/static/icons/maskable-512.png", "/static/offline.js", "/static/style.css"];
 const OFFLINE = "/offline/";
 
 self.addEventListener("install", event => {

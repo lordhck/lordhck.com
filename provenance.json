@@ -5,7 +5,7 @@
     {
       "name": "404.html",
       "digest": {
-        "sha256": "2d826f4ed14ced152911ddcc2778ea7e6e1823c35cd6fc270ceeba38791574eb"
+        "sha256": "0b949da8ffc6ecf856dc661bbf3f4bc1a3ee20aec24600c9d2a608b84990b1f3"
       }
     },
     {
@@ -17,7 +17,7 @@
     {
       "name": "about/index.html",
       "digest": {
-        "sha256": "e44d6fe43c58b78c104e39b22941fb2a76ae7e600a2bfcf84e2ed85eba631d62"
+        "sha256": "ef065570eb81b0d5a1ab99f900200a37e804143fec7d14a06a3ae9b95933c692"
       }
     },
     {
@@ -29,37 +29,37 @@
     {
       "name": "index.html",
       "digest": {
-        "sha256": "c1ad3366cf3f8938b17d45a48d53c4fe36523e7c348eb1052d3d9dd89306480a"
+        "sha256": "a1cf57cc172e4847462d99c9130434574144f6372025bf4fec9a0908e6196764"
       }
     },
     {
       "name": "manifest.webmanifest",
       "digest": {
-        "sha256": "bd4e7ba8fa41c3e3f93372be94f2b629b6a93bfdf1cf23ceb894300fca71a922"
+        "sha256": "a738dfc4a14e03971b4126f5f240e512914f3f69fcdf44fde08cf3e423e3572e"
       }
     },
     {
       "name": "offline/index.html",
       "digest": {
-        "sha256": "71b75fcb56ad6628dd0bb133723652062c03bb2a8ff0e00eaeef8bf7b9f86dc4"
+        "sha256": "6b9b8a30d784db64e04b600c32934711676a31a5aa4e51d3e2379490daefd9e4"
       }
     },
     {
       "name": "post/hello-world.html",
       "digest": {
-        "sha256": "47f1dee18e44ec77bb46ce5a8dcc725355de05ee45925d8da7e6605855a9bbc1"
+        "sha256": "d0468d0f0c1393aab3ab807ab60e2754c98e396632b8303a4a96cbcf06ab1bdd"
       }
     },
     {
       "name": "post/terminal-email.html",
       "digest": {
-        "sha256": "77e3eda147ee8bc2bc1b836088e1000948421d693f928833224df606ed2f36ba"
+        "sha256": "b9299d6b6eabdedc93f166ee77287ce5571dc0042adbb799513a4a46ffc1d924"
       }
     },
     {
       "name": "posts/index.html",
       "digest": {
-        "sha256": "081237d25f7aefc91d8210431382ac3e9d7327249a335c481153d585a7638b0b"
+        "sha256": "8222616a6fceb5cef0a3a18d58758f7910ef4e43ea53651cbff8c7841198ccd4"
       }
     },
     {
@@ -141,15 +141,21 @@
       }
     },
     {
+      "name": "static/offline.js",
+      "digest": {
+        "sha256": "c03d789c66bd75b8251d1618e8701c1d0170c04660dd27b11c528741652ead8f"
+      }
+    },
+    {
       "name": "static/style.css",
       "digest": {
-        "sha256": "db5ec1f29b9f6fb2ce409293e529ec29bad12a62cb873c09232adbe60802bdd6"
+        "sha256": "2687dc2073844c763c55ff19b782f92121ea8682f25b8304c43fe72231e34de5"
       }
     },
     {
       "name": "sw.js",
       "digest": {
-        "sha256": "95c01211a43a3e87563d92ebf28ce94dde18b483b753f39f766e6a32252450b8"
+        "sha256": "a0e4a0af5b6833be719ff2ca48f7cbb3f3495b4fbf17c6911bd2d309f63764ec"
       }
     }
   ],
@@ -186,7 +192,7 @@
               "args": {
                 "vcs:localdir:context": ".",
                 "vcs:localdir:dockerfile": ".",
-                "vcs:revision": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
+                "vcs:revision": "13871aefc69ad44b2118bb988d697bfb29049811",
                 "vcs:source": "https://github.com/lordhck/lordhck.com"
               }
             }
@@ -197,18 +203,18 @@
       "internalParameters": {
         "buildConfig": {
           "digestMapping": {
-            "sha256:06609fdb602c58d219f08cdd2849f5fdb8282f1705e666fc3a95232b51dc319b": "step9",
-            "sha256:33fe793bec8b663ef54cfa08bef772fabcc3d0d366ab9628a444321c358c8972": "step3",
+            "sha256:0009887f514727c75b1b4ba4aa975618f333e9f8b64c5e06e81cb8a95ed2ae35": "step6",
+            "sha256:04708d58eab1db8a9983f8481218866accfd93da2587ae1ff8db83acf8bc552b": "step5",
+            "sha256:223d9a6ab2734879a6a95f3d0ca239b98f0a14a5d43d3f298a64e9d086efc4e9": "step11",
+            "sha256:283c2ae9f67454bc8ea4cebae47188e525bb31f88c625e9b7e7ee6a4f554b4c2": "step8",
             "sha256:3bfc8d48886857b4fb62cc72c3e471f98fd48d963dac86463c1d3f56d790e4e1": "step2",
-            "sha256:47811662cef29285bd0b9e0e0a8326c76a94a4104712ca2077cddfac67cc84d4": "step4",
             "sha256:4eef146e54d7c9a44bbeb9b8c75de41c0ab49c615c46ea1343cd52b52e9c965a": "step1",
             "sha256:66be4bc85442b631e1d34f340cac92233d7beb99a6332f84e2a3c8b943ec17f7": "step0",
-            "sha256:84d5561a79adea5db496b4f15d948c6680a58a305961af2c7fadbc893d2ba01f": "step5",
-            "sha256:ca76c6fcfb272d7b453a0d074edb396114c7833d90b06a10e112579fb0e72500": "step10",
-            "sha256:dc6dc139be437c8d568acd5acb3273651c2c0a487a32400efb5581049e4f8c0f": "step6",
-            "sha256:e361969539b9252cd7a39bd4dee40bb44d35ae892b685fa754adb526a9fac1db": "step7",
-            "sha256:f44ff9c37eae1d3aeceba1aac71f1d2661b619c8ef54dce236001633b19a39f1": "step11",
-            "sha256:fcf64b33eb290d9f3f75986085f691bc79382829f9556da9d45c9525d7eb8d2f": "step8"
+            "sha256:8d6cec12f05e4b38ebd1a03778a3066a3cd4832fff6b9551246f79e3d43cc0cb": "step9",
+            "sha256:cf6f3709121ad5144b2ccf05409af3f9e28d5aa4846a5ee9a1d74c0a9128248a": "step7",
+            "sha256:d37cddcd174c68ae84b5454758e92d1eb86beea7d9652655a3a29c3902afe6d6": "step3",
+            "sha256:d541f4df31c9f043085d6d16ff8cb1b96a36897886418cd8e60a2decbbb77eb0": "step4",
+            "sha256:f4eb4050f06d19d16947ead4ad89dcce3b0134a968310ff5c7ddb2071740cc0c": "step10"
           },
           "llbDefinition": [
             {
@@ -604,9 +610,9 @@
         "github_actor_id": "54715115",
         "github_event_name": "push",
         "github_event_payload": {
-          "after": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
+          "after": "13871aefc69ad44b2118bb988d697bfb29049811",
           "base_ref": null,
-          "before": "46ccfbf50068d18fadb3310b62d37158465240ef",
+          "before": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
           "commits": [
             {
               "author": {
@@ -620,14 +626,14 @@
                 "username": "lordhck"
               },
               "distinct": true,
-              "id": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
-              "message": "feat(pwa): add manifest, icons and offline worker",
-              "timestamp": "2026-10-06T22:40:29+02:00",
-              "tree_id": "839bf2ee99aebcf54506614982eae249bfaafe31",
-              "url": "https://github.com/lordhck/lordhck.com/commit/44885bb9a5e85b3116b4069ffa80eab45b69ea36"
+              "id": "13871aefc69ad44b2118bb988d697bfb29049811",
+              "message": "feat(offline): pixel-art offline screen and dark app colors",
+              "timestamp": "2026-10-08T01:02:13+02:00",
+              "tree_id": "4b45d0f85f5eccad21694fc67c8e99c0ad622e27",
+              "url": "https://github.com/lordhck/lordhck.com/commit/13871aefc69ad44b2118bb988d697bfb29049811"
             }
           ],
-          "compare": "https://github.com/lordhck/lordhck.com/compare/46ccfbf50068...44885bb9a5e8",
+          "compare": "https://github.com/lordhck/lordhck.com/compare/44885bb9a5e8...13871aefc69a",
           "created": false,
           "deleted": false,
           "forced": false,
@@ -643,11 +649,11 @@
               "username": "lordhck"
             },
             "distinct": true,
-            "id": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
-            "message": "feat(pwa): add manifest, icons and offline worker",
-            "timestamp": "2026-10-06T22:40:29+02:00",
-            "tree_id": "839bf2ee99aebcf54506614982eae249bfaafe31",
-            "url": "https://github.com/lordhck/lordhck.com/commit/44885bb9a5e85b3116b4069ffa80eab45b69ea36"
+            "id": "13871aefc69ad44b2118bb988d697bfb29049811",
+            "message": "feat(offline): pixel-art offline screen and dark app colors",
+            "timestamp": "2026-10-08T01:02:13+02:00",
+            "tree_id": "4b45d0f85f5eccad21694fc67c8e99c0ad622e27",
+            "url": "https://github.com/lordhck/lordhck.com/commit/13871aefc69ad44b2118bb988d697bfb29049811"
           },
           "pusher": {
             "email": "lordhck@niton.dev",
@@ -739,9 +745,9 @@
             "private": false,
             "pull_request_creation_policy": "all",
             "pulls_url": "https://api.github.com/repos/lordhck/lordhck.com/pulls{/number}",
-            "pushed_at": 1791319235,
+            "pushed_at": 1791414144,
             "releases_url": "https://api.github.com/repos/lordhck/lordhck.com/releases{/id}",
-            "size": 522,
+            "size": 589,
             "ssh_url": "git@github.com:lordhck/lordhck.com.git",
             "stargazers": 0,
             "stargazers_count": 0,
@@ -754,7 +760,7 @@
             "teams_url": "https://api.github.com/repos/lordhck/lordhck.com/teams",
             "topics": [],
             "trees_url": "https://api.github.com/repos/lordhck/lordhck.com/git/trees{/sha}",
-            "updated_at": "2026-10-06T20:16:37Z",
+            "updated_at": "2026-10-06T20:40:39Z",
             "url": "https://api.github.com/repos/lordhck/lordhck.com",
             "visibility": "public",
             "watchers": 0,
@@ -793,35 +799,35 @@
         "github_repository_owner": "lordhck",
         "github_repository_owner_id": "54715115",
         "github_run_attempt": "1",
-        "github_run_id": "37528250124",
-        "github_run_number": "15",
+        "github_run_id": "37699897317",
+        "github_run_number": "16",
         "github_runner_arch": "X64",
         "github_runner_environment": "github-hosted",
         "github_runner_image_os": "ubuntu24",
         "github_runner_image_version": "20260927.320.1",
-        "github_runner_name": "GitHub Actions 1000000468",
+        "github_runner_name": "GitHub Actions 1000000472",
         "github_runner_os": "Linux",
-        "github_runner_tracking_id": "github_ccebedc9-41eb-4824-baf9-6ff0cc87f83e",
+        "github_runner_tracking_id": "github_c121b696-974e-4720-a5f9-a69261fd0270",
         "github_server_url": "https://github.com",
         "github_triggering_actor": "lordhck",
         "github_workflow": "Deploy",
         "github_workflow_ref": "lordhck/lordhck.com/.github/workflows/deploy.yml@refs/heads/main",
-        "github_workflow_sha": "44885bb9a5e85b3116b4069ffa80eab45b69ea36"
+        "github_workflow_sha": "13871aefc69ad44b2118bb988d697bfb29049811"
       }
     },
     "runDetails": {
       "builder": {
-        "id": "https://github.com/lordhck/lordhck.com/actions/runs/37528250124/attempts/1"
+        "id": "https://github.com/lordhck/lordhck.com/actions/runs/37699897317/attempts/1"
       },
       "metadata": {
-        "invocationId": "ykv6dclub2zpgpwpwv54zcgmk",
-        "startedOn": "2026-10-06T20:41:30.721603084Z",
-        "finishedOn": "2026-10-06T20:41:38.762991783Z",
+        "invocationId": "ll23la21ablsxcjknugyln729",
+        "startedOn": "2026-10-07T23:02:39.759084284Z",
+        "finishedOn": "2026-10-07T23:02:46.169360195Z",
         "buildkit_metadata": {
           "vcs": {
             "localdir:context": ".",
             "localdir:dockerfile": ".",
-            "revision": "44885bb9a5e85b3116b4069ffa80eab45b69ea36",
+            "revision": "13871aefc69ad44b2118bb988d697bfb29049811",
             "source": "https://github.com/lordhck/lordhck.com"
           },
           "source": {
@@ -1061,8 +1067,8 @@
                   }
                 ],
                 "digestMapping": {
-                  "sha256:3bb65fac3874ac7ace6732ee423f19e077778026e885a37be0b6851fbb81dc3a": "step0",
-                  "sha256:e6654c04f864a592a3a443d0f4108d07d867603ba7273d9e1b0e0be1199e07fd": "step1"
+                  "sha256:62d56d0aa80a62f1bcd108995eeee43a5cc23e74e769c4603edd0b75a4440dbc": "step1",
+                  "sha256:99e33b22acb0ce0a1fad289d7712dd97a770eefe99504bb9fb4355fc7ae06d9e": "step0"
                 }
               }
             ]
