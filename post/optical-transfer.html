@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical data transfer · Lord J. Hackwell</title>
+    <meta name="description" content="A simple experiment in optical data transfer.">
+    <link rel="canonical" href="https://lordhck.com/post/optical-transfer.html">
+    <link rel="alternate" type="application/rss+xml" title="Lord J. Hackwell" href="/feed.xml">
+
+    <meta property="og:site_name" content="Lord J. Hackwell">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Optical data transfer">
+    <meta property="og:description" content="A simple experiment in optical data transfer.">
+    <meta property="og:url" content="https://lordhck.com/post/optical-transfer.html">
+    <meta property="og:image" content="https://lordhck.com/static/imgs/social-share.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="article:published_time" content="2026-11-07T01:21:59+02:00">
+    <meta property="article:author" content="Lord J. Hackwell">
+    <meta property="article:tag" content="tech">
+    <meta property="article:tag" content="apps">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Optical data transfer",
+          "description": "A simple experiment in optical data transfer.",
+          "url": "https://lordhck.com/post/optical-transfer.html",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://lordhck.com/post/optical-transfer.html"
+          },
+          "image": [
+            "https://lordhck.com/static/imgs/social-share.webp"
+          ],
+          "datePublished": "2026-11-07T01:21:59+02:00",
+          "dateModified": "2026-11-07T01:21:59+02:00",
+          "author": {
+            "@type": "Person",
+            "name": "Lord J. Hackwell",
+            "url": "https://lordhck.com/"
+          },
+          "publisher": {
+            "@type": "Person",
+            "name": "Lord J. Hackwell",
+            "url": "https://lordhck.com/"
+          },
+          "keywords": [
+            "tech",
+            "apps"
+          ],
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://lordhck.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Posts",
+              "item": "https://lordhck.com/posts/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Optical data transfer",
+              "item": "https://lordhck.com/post/optical-transfer.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <script>
+        // Set theme before paint to avoid a flash
+        (function () {
+            var theme;
+            try { theme = localStorage.getItem("theme"); } catch (e) {}
+            var dark = theme === "dark" ||
+                (theme !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+            document.documentElement.classList.toggle("dark", dark);
+        })();
+    </script>
+    <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/static/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="lordhck">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header id="top">
+        <a href="/" class="logo" aria-label="Home">
+            <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
+                <rect width="32" height="32" rx="7" fill="#0c1016"/>
+                <path d="M16 4.5 26 10.25v11.5L16 27.5 6 21.75v-11.5z" fill="none" stroke="#a9b3c2" stroke-width="1.8"/>
+                <path d="M11 10.4h3l4.95 9h3.85v2.2h-5.14l-2.08-3.78-2.08 3.78H11l3.33-6.06-1.62-2.94H11z" fill="#b98cff"/>
+            </svg>
+        </a>
+
+        <div class="links">
+            <a href="mailto:hey@lordhck.com">hey@lordhck.com</a>
+            <a href="/feed.xml">RSS</a>
+
+            <label class="toggle">
+                <input type="checkbox" id="dark-mode" aria-label="Dark mode">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h1>Optical data transfer</h1>
+            <p>
+                <time class="date" datetime="2026-11-07T01:21:59+02:00">07 Nov 2026, 01:21</time>
+                <span class="tag">#tech</span>
+                <span class="tag">#apps</span>
+            </p>
+
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/posts/">Posts</a></li>
+                    <li aria-current="page">Optical data transfer</li>
+                </ol>
+            </nav>
+
+            <p>Have you ever transferred data through a camera?</p>
+<p>Not scanned a QR code to open a website, but actually transferred files using nothing but light?</p>
+<p>Well, this started as one of those slightly questionable ideas you get while sitting at a bar.</p>
+<p>The idea was simple: take a file, split it into smaller chunks, turn each chunk into a QR code and flash them one after another on a screen. Point a camera at it, collect the data and put the file back together.</p>
+<p>It should work, right?</p>
+<p>Turns out, it does.</p>
+<p>About 20 minutes later, we had ourselves a working Proof of Concept.</p>
+<p>No Bluetooth, no Wi-Fi, no cables. Just a screen, a camera and a whole lot of QR codes flashing back and forth.</p>
+<p>You can try it yourself:</p>
+<p><a href="https://lordhck.github.io/qrcode">https://lordhck.github.io/qrcode</a></p>
+<p>Sometimes the dumbest ideas are the most fun to build.</p>
+
+            <a href="#top" class="back-to-top">back to top</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026, Lord J. Hackwell. Version:
+            <span id="version">6ed8cd0</span>
+        </p>
+        <p class="theme-switch">
+            <button type="button" id="theme-cycle" title="Switch theme">theme: <span class="theme-value">system</span></button>
+        </p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+    <script src="/static/code.js"></script>
+</body>
+</html>

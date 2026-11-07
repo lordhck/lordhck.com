@@ -7,7 +7,28 @@
     <language>en</language>
     <managingEditor>hey@lordhck.com (Lord J. Hackwell)</managingEditor>
     <atom:link href="https://lordhck.com/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 30 Sep 2026 03:44:10 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 01:21:59 +0200</lastBuildDate>
+    <item>
+      <title>Optical data transfer</title>
+      <link>https://lordhck.com/post/optical-transfer.html</link>
+      <guid isPermaLink="true">https://lordhck.com/post/optical-transfer.html</guid>
+      <pubDate>Sat, 07 Nov 2026 01:21:59 +0200</pubDate>
+      <author>hey@lordhck.com (Lord J. Hackwell)</author>
+      <description>A simple experiment in optical data transfer.</description>
+      <content:encoded>&lt;p&gt;Have you ever transferred data through a camera?&lt;/p&gt;
+&lt;p&gt;Not scanned a QR code to open a website, but actually transferred files using nothing but light?&lt;/p&gt;
+&lt;p&gt;Well, this started as one of those slightly questionable ideas you get while sitting at a bar.&lt;/p&gt;
+&lt;p&gt;The idea was simple: take a file, split it into smaller chunks, turn each chunk into a QR code and flash them one after another on a screen. Point a camera at it, collect the data and put the file back together.&lt;/p&gt;
+&lt;p&gt;It should work, right?&lt;/p&gt;
+&lt;p&gt;Turns out, it does.&lt;/p&gt;
+&lt;p&gt;About 20 minutes later, we had ourselves a working Proof of Concept.&lt;/p&gt;
+&lt;p&gt;No Bluetooth, no Wi-Fi, no cables. Just a screen, a camera and a whole lot of QR codes flashing back and forth.&lt;/p&gt;
+&lt;p&gt;You can try it yourself:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://lordhck.github.io/qrcode"&gt;https://lordhck.github.io/qrcode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes the dumbest ideas are the most fun to build.&lt;/p&gt;</content:encoded>
+      <category>tech</category>
+      <category>apps</category>
+    </item>
     <item>
       <title>Terminal e-mail client?</title>
       <link>https://lordhck.com/post/terminal-email.html</link>
