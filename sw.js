@@ -1,4 +1,4 @@
-const CACHE = "site-1c521d3e5250";
+const CACHE = "site-140661570ce8";
 const PRECACHE = ["/404.html", "/about/", "/", "/manifest.webmanifest", "/offline/", "/post/hello-world.html", "/post/optical-transfer.html", "/post/terminal-email.html", "/posts/", "/static/app.js", "/static/code.js", "/static/favicon.svg", "/static/icons/apple-touch-icon.png", "/static/icons/icon-192.png", "/static/icons/icon-512.png", "/static/icons/maskable-192.png", "/static/icons/maskable-512.png", "/static/offline.js", "/static/style.css"];
 const OFFLINE = "/offline/";
 
