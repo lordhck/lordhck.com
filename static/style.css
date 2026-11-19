@@ -215,6 +215,10 @@ footer {
     color: #999;
 }
 
+footer a {
+    color: inherit;
+}
+
 #version {
     font-family: Courier, monospace;
 }
@@ -233,36 +237,6 @@ footer {
 .not-found h1 {
     font-family: Courier, monospace;
     font-size: 4em;
-}
-
-/* Offline screen stays dark in both themes; 600px is 4x the canvas */
-.offline-screen {
-    position: relative;
-    max-width: 600px;
-    margin: 30px 0;
-    overflow: hidden;
-    border-radius: 8px;
-    background: #111;
-}
-
-.offline-screen canvas {
-    display: block;
-    width: 100%;
-    height: auto;
-    image-rendering: pixelated;
-    filter: drop-shadow(0 0 18px rgba(138, 180, 248, 0.35));
-    touch-action: manipulation;
-    user-select: none;
-}
-
-/* Faint scanlines, fading out at the edges */
-.offline-screen::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(transparent 0 2px, rgba(0, 0, 0, 0.2) 2px 3px);
-    mask-image: radial-gradient(closest-side, #000 60%, transparent);
-    pointer-events: none;
 }
 
 .breadcrumbs {
@@ -431,7 +405,7 @@ article img {
 
 /* External links: arrow as mask so it follows link color */
 a[href^="http"]:not([href*="lordhck.com"])::after {
-    --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 18l6-6M13 6l6 6'/%3E%3C/svg%3E");
+    --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M7 7h10v10'/%3E%3C/svg%3E");
     content: "";
     display: inline-block;
     width: 0.9em;

@@ -1,6 +1,5 @@
 const CACHE = {{ cache | tojson }};
 const PRECACHE = {{ precache | tojson }};
-const OFFLINE = "/offline/";
 
 self.addEventListener("install", event => {
     // Bypass the HTTP cache so a deploy is fresh
@@ -33,7 +32,6 @@ async function respond(request) {
     } catch (error) {
         const cached = await caches.match(request, {ignoreSearch: request.mode === "navigate"});
         if (cached) return cached;
-        if (request.mode === "navigate") return caches.match(OFFLINE);
         throw error;
     }
 }
