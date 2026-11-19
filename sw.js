@@ -1,4 +1,4 @@
-const CACHE = "site-38d227246a00";
+const CACHE = "site-1d7353637514";
 const PRECACHE = ["/404.html", "/about/", "/", "/manifest.webmanifest", "/post/hello-world.html", "/post/optical-transfer.html", "/post/terminal-email.html", "/posts/", "/static/app.js", "/static/code.js", "/static/favicon.svg", "/static/icons/apple-touch-icon.png", "/static/icons/icon-192.png", "/static/icons/icon-512.png", "/static/icons/maskable-192.png", "/static/icons/maskable-512.png", "/static/style.css"];
 
 self.addEventListener("install", event => {
