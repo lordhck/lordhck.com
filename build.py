@@ -17,6 +17,8 @@ from markupsafe import Markup
 ROOT = Path(__file__).parent
 TEMPLATES = ROOT / "templates"
 STATIC = ROOT / "static"
+# Served at /f/
+FILES = ROOT / "files"
 POSTS_DIR = ROOT / "content" / "posts"
 DIST = ROOT / "dist"
 
@@ -292,6 +294,9 @@ def build():
 
     if STATIC.exists():
         shutil.copytree(STATIC, DIST / "static")
+
+    if FILES.exists():
+        shutil.copytree(FILES, DIST / "f")
 
     # Custom domain for GitHub Pages
     if (ROOT / "CNAME").exists():
