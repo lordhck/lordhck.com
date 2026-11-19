@@ -5,7 +5,7 @@
     {
       "name": "404.html",
       "digest": {
-        "sha256": "885e2dd9f328e7409cedc2b39ef8e355c3cd13a5ce1ea5628385682910962089"
+        "sha256": "bd1543262aa5052e3a61f7835d34eddfcc9e172c3aa6f7973e2853e93d86a122"
       }
     },
     {
@@ -17,7 +17,7 @@
     {
       "name": "about/index.html",
       "digest": {
-        "sha256": "c38ce18186079013c52e616257f853858a59e112dd720a2d4b12a385d18e33e4"
+        "sha256": "41c0c1d16ea132a9c770b1ca37e2e819c7acac122c61d78fdb554b4d5a2fcea6"
       }
     },
     {
@@ -29,7 +29,7 @@
     {
       "name": "index.html",
       "digest": {
-        "sha256": "ce2c1a16b31a87631cd357d316a6d324963d6fa1f7d065673881ecb901310693"
+        "sha256": "e7c376826529a0d89a9d7a4b4769ad1ab8e94834013beaff228fa8ff1ed9c6c3"
       }
     },
     {
@@ -39,33 +39,27 @@
       }
     },
     {
-      "name": "offline/index.html",
-      "digest": {
-        "sha256": "cd5ade12417a6c767ff8ebca54c7242d58f0a5d0de18ad449602cd8d92b3cf4a"
-      }
-    },
-    {
       "name": "post/hello-world.html",
       "digest": {
-        "sha256": "3db5fcdfa277708f6c977693edb3fed9046e12224c1b7ed5f12ca8f9f6594ca4"
+        "sha256": "4f006ee076c4594b66986b9989d5364871032ac1e22666edfbeb3efef3f8f639"
       }
     },
     {
       "name": "post/optical-transfer.html",
       "digest": {
-        "sha256": "311c70a8aaa40714e3bb4b7b8885e98b9a2509d6e9980dce984e55d1ede86444"
+        "sha256": "84cbee5b403bb8213c5da0576fc2d248f4b39781687f4f055c816ca8741271ca"
       }
     },
     {
       "name": "post/terminal-email.html",
       "digest": {
-        "sha256": "0e2da3fe23d5abd153924da30037000679f1ee9552af2a62061832bc0d73fc85"
+        "sha256": "1f65fb279fbf33ebf44d49821aa6ac77e2cbb6c1c393e024f37fded089e465d8"
       }
     },
     {
       "name": "posts/index.html",
       "digest": {
-        "sha256": "d0498c8bb1bbf586ea171afd92ae2cb7f800cc4936ca457c1e7c672705ca7f69"
+        "sha256": "939abe7ab5387f0a9e20e71265534034dedf0f7ef30ce3e1ffb1cd2a05082074"
       }
     },
     {
@@ -147,21 +141,15 @@
       }
     },
     {
-      "name": "static/offline.js",
-      "digest": {
-        "sha256": "c03d789c66bd75b8251d1618e8701c1d0170c04660dd27b11c528741652ead8f"
-      }
-    },
-    {
       "name": "static/style.css",
       "digest": {
-        "sha256": "2687dc2073844c763c55ff19b782f92121ea8682f25b8304c43fe72231e34de5"
+        "sha256": "c76fb5c61ea6812e52d70abb9237b328d43042bb9b552bdd13ef6900070f03c2"
       }
     },
     {
       "name": "sw.js",
       "digest": {
-        "sha256": "ea3e6a339e0af87c305767ebbb231f0e4b1455a737e792cdfcc530fb18ea8a9c"
+        "sha256": "b304a2f2bb97041a0bbc7ecfde150484a58cdbbb56483abca4ce43eb735b073a"
       }
     }
   ],
@@ -198,7 +186,7 @@
               "args": {
                 "vcs:localdir:context": ".",
                 "vcs:localdir:dockerfile": ".",
-                "vcs:revision": "4e0a7daccb74c12cd0f8c766ba340600b1c19301",
+                "vcs:revision": "2759f7cd9dc2855d485ef723e6190baab39d393c",
                 "vcs:source": "https://github.com/lordhck/lordhck.com"
               }
             }
@@ -209,18 +197,18 @@
       "internalParameters": {
         "buildConfig": {
           "digestMapping": {
-            "sha256:07030dd3222cbc51b3ab79d5d84c21aadb377226698fac0c9c187ba138f2fbc7": "step3",
+            "sha256:05680062bb263e9a125bd6c3482b0e0a0843bca9aa4abc0f21251a7edae72b61": "step6",
+            "sha256:208afc32e11daf709ef2ca1f85e6f42395d256d462d4d30ad79535efbe9eef31": "step10",
+            "sha256:2ecd1fdde4215b29adb2528592041f52374b12767a649a34396127c06b9e8661": "step3",
             "sha256:3bfc8d48886857b4fb62cc72c3e471f98fd48d963dac86463c1d3f56d790e4e1": "step2",
             "sha256:4eef146e54d7c9a44bbeb9b8c75de41c0ab49c615c46ea1343cd52b52e9c965a": "step1",
+            "sha256:58a0c892a43cb18d6d848ef00b188ed4f79a5310b61d552a91e98d9196da6e15": "step11",
+            "sha256:5916925e8afc2e078399876cf1af22322289d732a108491ac1bee60ed365d26e": "step4",
+            "sha256:5acd530121199cf86bd5fd7f2dadec8ec38eb8d4d472a5532fc606a5844216e9": "step8",
             "sha256:66be4bc85442b631e1d34f340cac92233d7beb99a6332f84e2a3c8b943ec17f7": "step0",
-            "sha256:6ee117b4fbf58d1d9429ed384b4e82f2088368a195636cf69fbfe2cda0944485": "step5",
-            "sha256:b5c7854a20ed29fcd361640481b282d7f2db3a9e537b19d191790a02fb33f58f": "step9",
-            "sha256:beaed15287e81e6ce4da11527788e365243b6a13489c15928d58cbc4c064ceaf": "step4",
-            "sha256:c0e451ce4945a8f2eb3ce4a918ba8016d6b6835cd800cf40ebdf79015659c5fd": "step7",
-            "sha256:ca7f8c3c08c93ea82c5bb9d1c5941b27d289324fcdbdd0dbb0f799f9f6385bfd": "step10",
-            "sha256:d447d45b2520cc0bdeaa6c65850a3dbd70b53ccd7639551f225ebf6e7534c338": "step6",
-            "sha256:e16ee0a056e314e388324edf3282400a8545e92a59268199e96b2ad78f1ca26b": "step8",
-            "sha256:f310ff7935218a71263b231c922567a01571f746e2f0b9253e468aa31bf41f81": "step11"
+            "sha256:67dbefee8c34e0648211907779d34c21b46a65a0a276b812fe09cdc185b06a4d": "step9",
+            "sha256:a5953534039532a92fc7fd92f1b40dd49946dd6801feadca4f316d6cbe9ab454": "step7",
+            "sha256:b792dffb4b3fbd8291d6909f02a18297eadeff722401b0cb7516cd059bb47ae0": "step5"
           },
           "llbDefinition": [
             {
@@ -616,15 +604,15 @@
         "github_actor_id": "54715115",
         "github_event_name": "push",
         "github_event_payload": {
-          "after": "4e0a7daccb74c12cd0f8c766ba340600b1c19301",
+          "after": "2759f7cd9dc2855d485ef723e6190baab39d393c",
           "base_ref": null,
-          "before": "1f051fde8ad391462c94c8f5682ed0f975b3bc56",
+          "before": "4e0a7daccb74c12cd0f8c766ba340600b1c19301",
           "commits": [
             {
               "author": {
-                "email": "code+sign@lordhck.com",
-                "name": "Lord J. Hackwell",
-                "username": "lordhck"
+                "email": "noreply@anthropic.com",
+                "name": "Claude",
+                "username": "claude"
               },
               "committer": {
                 "email": "code+sign@lordhck.com",
@@ -632,22 +620,22 @@
                 "username": "lordhck"
               },
               "distinct": true,
-              "id": "4e0a7daccb74c12cd0f8c766ba340600b1c19301",
-              "message": "post(blog): add optical data transfer experiment",
-              "timestamp": "2026-11-08T02:46:28+01:00",
-              "tree_id": "29548ff554355412279228b611408fe7a7058db5",
-              "url": "https://github.com/lordhck/lordhck.com/commit/4e0a7daccb74c12cd0f8c766ba340600b1c19301"
+              "id": "2759f7cd9dc2855d485ef723e6190baab39d393c",
+              "message": "feat(site): x link, external arrows, no offline",
+              "timestamp": "2026-11-19T11:26:35+01:00",
+              "tree_id": "52ba938c0c566e653bb2ca900762493c08ea4cc0",
+              "url": "https://github.com/lordhck/lordhck.com/commit/2759f7cd9dc2855d485ef723e6190baab39d393c"
             }
           ],
-          "compare": "https://github.com/lordhck/lordhck.com/compare/1f051fde8ad3...4e0a7daccb74",
+          "compare": "https://github.com/lordhck/lordhck.com/compare/4e0a7daccb74...2759f7cd9dc2",
           "created": false,
           "deleted": false,
-          "forced": true,
+          "forced": false,
           "head_commit": {
             "author": {
-              "email": "code+sign@lordhck.com",
-              "name": "Lord J. Hackwell",
-              "username": "lordhck"
+              "email": "noreply@anthropic.com",
+              "name": "Claude",
+              "username": "claude"
             },
             "committer": {
               "email": "code+sign@lordhck.com",
@@ -655,11 +643,11 @@
               "username": "lordhck"
             },
             "distinct": true,
-            "id": "4e0a7daccb74c12cd0f8c766ba340600b1c19301",
-            "message": "post(blog): add optical data transfer experiment",
-            "timestamp": "2026-11-08T02:46:28+01:00",
-            "tree_id": "29548ff554355412279228b611408fe7a7058db5",
-            "url": "https://github.com/lordhck/lordhck.com/commit/4e0a7daccb74c12cd0f8c766ba340600b1c19301"
+            "id": "2759f7cd9dc2855d485ef723e6190baab39d393c",
+            "message": "feat(site): x link, external arrows, no offline",
+            "timestamp": "2026-11-19T11:26:35+01:00",
+            "tree_id": "52ba938c0c566e653bb2ca900762493c08ea4cc0",
+            "url": "https://github.com/lordhck/lordhck.com/commit/2759f7cd9dc2855d485ef723e6190baab39d393c"
           },
           "pusher": {
             "email": "lordhck@niton.dev",
@@ -751,9 +739,9 @@
             "private": false,
             "pull_request_creation_policy": "all",
             "pulls_url": "https://api.github.com/repos/lordhck/lordhck.com/pulls{/number}",
-            "pushed_at": 1794102505,
+            "pushed_at": 1795084044,
             "releases_url": "https://api.github.com/repos/lordhck/lordhck.com/releases{/id}",
-            "size": 623,
+            "size": 630,
             "ssh_url": "git@github.com:lordhck/lordhck.com.git",
             "stargazers": 0,
             "stargazers_count": 0,
@@ -766,7 +754,7 @@
             "teams_url": "https://api.github.com/repos/lordhck/lordhck.com/teams",
             "topics": [],
             "trees_url": "https://api.github.com/repos/lordhck/lordhck.com/git/trees{/sha}",
-            "updated_at": "2026-11-07T21:10:40Z",
+            "updated_at": "2026-11-08T01:48:29Z",
             "url": "https://api.github.com/repos/lordhck/lordhck.com",
             "visibility": "public",
             "watchers": 0,
@@ -805,36 +793,36 @@
         "github_repository_owner": "lordhck",
         "github_repository_owner_id": "54715115",
         "github_run_attempt": "1",
-        "github_run_id": "42435830711",
-        "github_run_number": "19",
+        "github_run_id": "44505829892",
+        "github_run_number": "20",
         "github_runner_arch": "X64",
         "github_runner_environment": "github-hosted",
         "github_runner_image_os": "ubuntu26",
-        "github_runner_image_version": "20261101.186.1",
-        "github_runner_name": "GitHub Actions 1000000499",
+        "github_runner_image_version": "20261116.202.1",
+        "github_runner_name": "GitHub Actions 1000000506",
         "github_runner_os": "Linux",
-        "github_runner_tracking_id": "github_20a5bfb8-f157-4a21-966c-60d1df23ad6b",
+        "github_runner_tracking_id": "github_62c8e059-a360-44b1-8cc0-e8bd8cecbce6",
         "github_server_url": "https://github.com",
         "github_triggering_actor": "lordhck",
         "github_workflow": "Deploy",
         "github_workflow_ref": "lordhck/lordhck.com/.github/workflows/deploy.yml@refs/heads/main",
-        "github_workflow_sha": "4e0a7daccb74c12cd0f8c766ba340600b1c19301",
+        "github_workflow_sha": "2759f7cd9dc2855d485ef723e6190baab39d393c",
         "targetPlatform": "linux/amd64"
       }
     },
     "runDetails": {
       "builder": {
-        "id": "https://github.com/lordhck/lordhck.com/actions/runs/42435830711/attempts/1"
+        "id": "https://github.com/lordhck/lordhck.com/actions/runs/44505829892/attempts/1"
       },
       "metadata": {
-        "invocationId": "r3s57mmiptrb5byy5swdwhf8e",
-        "startedOn": "2026-11-08T01:48:44.034143139Z",
-        "finishedOn": "2026-11-08T01:48:57.651194428Z",
+        "invocationId": "rjxs68djtb9wvs30i14szs2qx",
+        "startedOn": "2026-11-19T10:27:45.804863164Z",
+        "finishedOn": "2026-11-19T10:27:58.888248082Z",
         "buildkit_metadata": {
           "vcs": {
             "localdir:context": ".",
             "localdir:dockerfile": ".",
-            "revision": "4e0a7daccb74c12cd0f8c766ba340600b1c19301",
+            "revision": "2759f7cd9dc2855d485ef723e6190baab39d393c",
             "source": "https://github.com/lordhck/lordhck.com"
           },
           "source": {
@@ -1074,14 +1062,14 @@
                   }
                 ],
                 "digestMapping": {
-                  "sha256:1c8b9b04d76e2f8f16faaf029c49e3f4fa4736d94c37b73bd89a8530235a7045": "step0",
-                  "sha256:c1b1806d1ed18f1a61222b348df101dad9370b4a617cc20708f607fba7079544": "step1"
+                  "sha256:007d53c843a19f52b073b50efea1ea2372f06042e162dc6fddcd11bb1e5ead89": "step0",
+                  "sha256:4a28737f60e6d2b3f7413dd092fd88f49826e7b181a33686478bb637eb7e30be": "step1"
                 }
               }
             ]
           },
           "layers": {
-            "step1:0": [
+            "step0:0": [
               [
                 {
                   "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
@@ -1107,143 +1095,6 @@
                   "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
                   "digest": "sha256:590f2846d3a720f68a8969f0bb555efc138279e08d91153308821e94a83fab3e",
                   "size": 22786668
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:f70cb0e0b6aae7a3b782ac112a141ccf2b8626caaf32b9bb2b08cb3833c64062",
-                  "size": 107478382
-                }
-              ]
-            ],
-            "step2:0": [
-              [
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:4831516dd0cb86845f5f902cb9b9d25b5c853152c337eb57e4737a9b7e2a2eb9",
-                  "size": 28228487
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:f59651dbc0ea4d34347e36637f7143de9a2a05badade5b0bee87893c38ad739f",
-                  "size": 3517407
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:322e9e97e47bc6b483f6658a018d5b1fbcac626debcc96684ef4311d2393b5c8",
-                  "size": 13667910
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:15155ecba1d2995bdddf42e6eb67ef7a36eca6af3cbcb123114a6bb8da48ed03",
-                  "size": 250
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:590f2846d3a720f68a8969f0bb555efc138279e08d91153308821e94a83fab3e",
-                  "size": 22786668
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:f70cb0e0b6aae7a3b782ac112a141ccf2b8626caaf32b9bb2b08cb3833c64062",
-                  "size": 107478382
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:5cf294e15fb61c25f5513fd1cbab78a218dfdf18dce030813d5b7e6d4e23354f",
-                  "size": 93
-                }
-              ]
-            ],
-            "step4:0": [
-              [
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:4831516dd0cb86845f5f902cb9b9d25b5c853152c337eb57e4737a9b7e2a2eb9",
-                  "size": 28228487
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:f59651dbc0ea4d34347e36637f7143de9a2a05badade5b0bee87893c38ad739f",
-                  "size": 3517407
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:322e9e97e47bc6b483f6658a018d5b1fbcac626debcc96684ef4311d2393b5c8",
-                  "size": 13667910
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:15155ecba1d2995bdddf42e6eb67ef7a36eca6af3cbcb123114a6bb8da48ed03",
-                  "size": 250
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:590f2846d3a720f68a8969f0bb555efc138279e08d91153308821e94a83fab3e",
-                  "size": 22786668
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:f70cb0e0b6aae7a3b782ac112a141ccf2b8626caaf32b9bb2b08cb3833c64062",
-                  "size": 107478382
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:5cf294e15fb61c25f5513fd1cbab78a218dfdf18dce030813d5b7e6d4e23354f",
-                  "size": 93
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:7ca3c303a31e105bb3350528cf1afc2e97891d06e46f7adf30d937a299f4e186",
-                  "size": 9998
-                }
-              ]
-            ],
-            "step5:0": [
-              [
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:4831516dd0cb86845f5f902cb9b9d25b5c853152c337eb57e4737a9b7e2a2eb9",
-                  "size": 28228487
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:f59651dbc0ea4d34347e36637f7143de9a2a05badade5b0bee87893c38ad739f",
-                  "size": 3517407
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:322e9e97e47bc6b483f6658a018d5b1fbcac626debcc96684ef4311d2393b5c8",
-                  "size": 13667910
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:15155ecba1d2995bdddf42e6eb67ef7a36eca6af3cbcb123114a6bb8da48ed03",
-                  "size": 250
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:590f2846d3a720f68a8969f0bb555efc138279e08d91153308821e94a83fab3e",
-                  "size": 22786668
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:f70cb0e0b6aae7a3b782ac112a141ccf2b8626caaf32b9bb2b08cb3833c64062",
-                  "size": 107478382
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:5cf294e15fb61c25f5513fd1cbab78a218dfdf18dce030813d5b7e6d4e23354f",
-                  "size": 93
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:7ca3c303a31e105bb3350528cf1afc2e97891d06e46f7adf30d937a299f4e186",
-                  "size": 9998
-                },
-                {
-                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
-                  "digest": "sha256:b0965319a9c37e94f1409ae56e01676544924261d9d49528cac4f5f565be26a3",
-                  "size": 2123926
                 }
               ]
             ]
